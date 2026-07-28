@@ -1,0 +1,1682 @@
+{
+  "무기": [
+    {
+      "no": "1",
+      "name": "사브르",
+      "desc": "11 ~ 16 / 3%(이하 가드 확률) | 1",
+      "icon": "images/item-icons/무기/001_사브르.png"
+    },
+    {
+      "no": "2",
+      "name": "플루트 소드",
+      "desc": "23 ~ 35 / 3% | 6",
+      "icon": "images/item-icons/무기/002_플루트_소드.png"
+    },
+    {
+      "no": "3",
+      "name": "쇼텔",
+      "desc": "34 ~ 52 / 4% | 12",
+      "icon": "images/item-icons/무기/003_쇼텔.png"
+    },
+    {
+      "no": "4",
+      "name": "시미터",
+      "desc": "45 ~ 70 /4% | 18",
+      "icon": "images/item-icons/무기/004_시미터.png"
+    },
+    {
+      "no": "5",
+      "name": "카타나",
+      "desc": "56 ~ 86 / 5% | 24",
+      "icon": "images/item-icons/무기/005_카타나.png"
+    },
+    {
+      "no": "6",
+      "name": "레이피어",
+      "desc": "68 ~ 104 / 5% | 30",
+      "icon": "images/item-icons/무기/006_레이피어.png"
+    },
+    {
+      "no": "7",
+      "name": "커틀러스",
+      "desc": "79 ~ 121 / 6% | 36",
+      "icon": "images/item-icons/무기/007_커틀러스.png"
+    },
+    {
+      "no": "8",
+      "name": "글라디우스",
+      "desc": "90 ~ 139 / 6% | 42",
+      "icon": "images/item-icons/무기/008_글라디우스.png"
+    },
+    {
+      "no": "9",
+      "name": "클레이모어",
+      "desc": "101 ~ 156 / 7% | 48",
+      "icon": "images/item-icons/무기/009_클레이모어.png"
+    },
+    {
+      "no": "10",
+      "name": "브로드 소드",
+      "desc": "113 ~ 174 / 7% | 54",
+      "icon": "images/item-icons/무기/010_브로드_소드.png"
+    },
+    {
+      "no": "11",
+      "name": "오딧세이 블레이드",
+      "desc": "124 ~ 191 / 8% | 60",
+      "icon": "images/item-icons/무기/011_오딧세이_블레이드.png"
+    },
+    {
+      "no": "12",
+      "name": "템플러 소드",
+      "desc": "136 ~ 209 / 8% | 66",
+      "icon": "images/item-icons/무기/012_템플러_소드.png"
+    },
+    {
+      "no": "13",
+      "name": "스컬릭엣지",
+      "desc": "147 ~ 226 / 9% | 72",
+      "icon": "images/item-icons/무기/013_스컬릭엣지.png"
+    },
+    {
+      "no": "14",
+      "name": "엑스칼리버",
+      "desc": "158 ~ 244 / 9% | 78",
+      "icon": "images/item-icons/무기/014_엑스칼리버.png"
+    },
+    {
+      "no": "15",
+      "name": "오블리비언",
+      "desc": "169 ~ 260 / 10% | 84",
+      "icon": "images/item-icons/무기/015_오블리비언.png"
+    },
+    {
+      "no": "16",
+      "name": "비히모스 차크람",
+      "desc": "9 ~ 19 | 1",
+      "icon": "images/item-icons/무기/016_비히모스_차크람.png"
+    },
+    {
+      "no": "17",
+      "name": "하이랜더",
+      "desc": "18 ~ 37 | 6",
+      "icon": "images/item-icons/무기/017_하이랜더.png"
+    },
+    {
+      "no": "18",
+      "name": "스켈레톤 레이지",
+      "desc": "28 ~ 56 | 12",
+      "icon": "images/item-icons/무기/018_스켈레톤_레이지.png"
+    },
+    {
+      "no": "19",
+      "name": "헬리오스",
+      "desc": "37 ~ 74 | 18",
+      "icon": "images/item-icons/무기/019_헬리오스.png"
+    },
+    {
+      "no": "20",
+      "name": "데몬 차크람",
+      "desc": "46 ~ 93 | 24",
+      "icon": "images/item-icons/무기/020_데몬_차크람.png"
+    },
+    {
+      "no": "21",
+      "name": "데인저 드롭",
+      "desc": "55 ~ 112 | 30",
+      "icon": "images/item-icons/무기/021_데인저_드롭.png"
+    },
+    {
+      "no": "22",
+      "name": "코로나",
+      "desc": "65 ~ 130 | 36",
+      "icon": "images/item-icons/무기/022_코로나.png"
+    },
+    {
+      "no": "23",
+      "name": "아이언 하울",
+      "desc": "74 ~ 149 | 42",
+      "icon": "images/item-icons/무기/023_아이언_하울.png"
+    },
+    {
+      "no": "24",
+      "name": "크로우 번",
+      "desc": "83 ~ 168 | 48",
+      "icon": "images/item-icons/무기/024_크로우_번.png"
+    },
+    {
+      "no": "25",
+      "name": "서펜트 트루퍼즈",
+      "desc": "92 ~ 186 | 54",
+      "icon": "images/item-icons/무기/025_서펜트_트루퍼즈.png"
+    },
+    {
+      "no": "26",
+      "name": "헬파이어",
+      "desc": "102 ~ 205 | 60",
+      "icon": "images/item-icons/무기/026_헬파이어.png"
+    },
+    {
+      "no": "27",
+      "name": "플레임 웨이브",
+      "desc": "111 ~ 223 | 66",
+      "icon": "images/item-icons/무기/027_플레임_웨이브.png"
+    },
+    {
+      "no": "28",
+      "name": "브로큰 레이지",
+      "desc": "120 ~ 242 | 72",
+      "icon": "images/item-icons/무기/028_브로큰_레이지.png"
+    },
+    {
+      "no": "29",
+      "name": "다이나믹 블로우",
+      "desc": "129 ~ 261 | 78",
+      "icon": "images/item-icons/무기/029_다이나믹_블로우.png"
+    },
+    {
+      "no": "30",
+      "name": "호러 오브 데스",
+      "desc": "139 ~ 279 | 84",
+      "icon": "images/item-icons/무기/030_호러_오브_데스.png"
+    },
+    {
+      "no": "31",
+      "name": "숏보우",
+      "desc": "12 ~ 18 | 1",
+      "icon": "images/item-icons/무기/031_숏보우.png"
+    },
+    {
+      "no": "32",
+      "name": "롱보우",
+      "desc": "25 ~ 36 | 6",
+      "icon": "images/item-icons/무기/032_롱보우.png"
+    },
+    {
+      "no": "33",
+      "name": "콤포지트 보우",
+      "desc": "38 ~ 54 | 12",
+      "icon": "images/item-icons/무기/033_콤포지트_보우.png"
+    },
+    {
+      "no": "34",
+      "name": "크로스 보우",
+      "desc": "51 ~ 73 | 18",
+      "icon": "images/item-icons/무기/034_크로스_보우.png"
+    },
+    {
+      "no": "35",
+      "name": "스트레이트 보우",
+      "desc": "63 ~ 90 | 24",
+      "icon": "images/item-icons/무기/035_스트레이트_보우.png"
+    },
+    {
+      "no": "36",
+      "name": "슈팅 라이트",
+      "desc": "76 ~ 109 | 30",
+      "icon": "images/item-icons/무기/036_슈팅_라이트.png"
+    },
+    {
+      "no": "37",
+      "name": "배틀 보우",
+      "desc": "89 ~ 126 | 36",
+      "icon": "images/item-icons/무기/037_배틀_보우.png"
+    },
+    {
+      "no": "38",
+      "name": "자벨린 보우",
+      "desc": "102 ~ 145 | 42",
+      "icon": "images/item-icons/무기/038_자벨린_보우.png"
+    },
+    {
+      "no": "39",
+      "name": "리커브 보우",
+      "desc": "114 ~ 163 | 48",
+      "icon": "images/item-icons/무기/039_리커브_보우.png"
+    },
+    {
+      "no": "40",
+      "name": "윈드 포스",
+      "desc": "127 ~ 181 | 54",
+      "icon": "images/item-icons/무기/040_윈드_포스.png"
+    },
+    {
+      "no": "41",
+      "name": "발키리",
+      "desc": "139 ~ 199 | 60",
+      "icon": "images/item-icons/무기/041_발키리.png"
+    },
+    {
+      "no": "42",
+      "name": "프리시전 보우",
+      "desc": "152 ~ 218 | 66",
+      "icon": "images/item-icons/무기/042_프리시전_보우.png"
+    },
+    {
+      "no": "43",
+      "name": "세인트 이글",
+      "desc": "165 ~ 235 | 72",
+      "icon": "images/item-icons/무기/043_세인트_이글.png"
+    },
+    {
+      "no": "44",
+      "name": "블랙버드",
+      "desc": "180 ~ 256 | 78",
+      "icon": "images/item-icons/무기/044_블랙버드.png"
+    },
+    {
+      "no": "45",
+      "name": "호크 아이",
+      "desc": "190 ~ 271 | 84",
+      "icon": "images/item-icons/무기/045_호크_아이.png"
+    },
+    {
+      "no": "46",
+      "name": "위자드 로드",
+      "desc": "13 ~ 17 | 1",
+      "icon": "images/item-icons/무기/046_위자드_로드.png"
+    },
+    {
+      "no": "47",
+      "name": "크리스탈 로드",
+      "desc": "26 ~ 34 | 6",
+      "icon": "images/item-icons/무기/047_크리스탈_로드.png"
+    },
+    {
+      "no": "48",
+      "name": "데스 스태프",
+      "desc": "39 ~ 51 | 12",
+      "icon": "images/item-icons/무기/048_데스_스태프.png"
+    },
+    {
+      "no": "49",
+      "name": "디스토션 스태프",
+      "desc": "52 ~ 68 | 18",
+      "icon": "images/item-icons/무기/049_디스토션_스태프.png"
+    },
+    {
+      "no": "50",
+      "name": "레이븐 로드",
+      "desc": "65 ~ 85 | 24",
+      "icon": "images/item-icons/무기/050_레이븐_로드.png"
+    },
+    {
+      "no": "51",
+      "name": "폴라리스",
+      "desc": "77 ~ 102 | 30",
+      "icon": "images/item-icons/무기/051_폴라리스.png"
+    },
+    {
+      "no": "52",
+      "name": "아케인 스태프",
+      "desc": "90 ~ 119 | 36",
+      "icon": "images/item-icons/무기/052_아케인_스태프.png"
+    },
+    {
+      "no": "53",
+      "name": "페이트 소울",
+      "desc": "103 ~ 136 | 42",
+      "icon": "images/item-icons/무기/053_페이트_소울.png"
+    },
+    {
+      "no": "54",
+      "name": "일루젼",
+      "desc": "116 ~ 153 | 48",
+      "icon": "images/item-icons/무기/054_일루젼.png"
+    },
+    {
+      "no": "55",
+      "name": "아이리스",
+      "desc": "129 ~ 170 | 54",
+      "icon": "images/item-icons/무기/055_아이리스.png"
+    },
+    {
+      "no": "56",
+      "name": "어스 호라이즌",
+      "desc": "142 ~ 186 | 60",
+      "icon": "images/item-icons/무기/056_어스_호라이즌.png"
+    },
+    {
+      "no": "57",
+      "name": "포어 사이트",
+      "desc": "155 ~ 203 | 66",
+      "icon": "images/item-icons/무기/057_포어_사이트.png"
+    },
+    {
+      "no": "58",
+      "name": "디아볼릭 로드",
+      "desc": "168 ~ 220 | 72",
+      "icon": "images/item-icons/무기/058_디아볼릭_로드.png"
+    },
+    {
+      "no": "59",
+      "name": "인터루드",
+      "desc": "181 ~ 237 | 78",
+      "icon": "images/item-icons/무기/059_인터루드.png"
+    },
+    {
+      "no": "60",
+      "name": "아마겟돈",
+      "desc": "194 ~ 254 | 84",
+      "icon": "images/item-icons/무기/060_아마겟돈.png"
+    }
+  ],
+  "방어구": [
+    {
+      "no": "1",
+      "name": "두건",
+      "desc": "4 | 3",
+      "icon": "images/item-icons/방어구/001_두건.png"
+    },
+    {
+      "no": "29",
+      "name": "글로브",
+      "desc": "3 | 4",
+      "icon": "images/item-icons/방어구/029_글로브.png"
+    },
+    {
+      "no": "2",
+      "name": "밴드",
+      "desc": "8 | 10",
+      "icon": "images/item-icons/방어구/002_밴드.png"
+    },
+    {
+      "no": "30",
+      "name": "건틀렛",
+      "desc": "6 | 11",
+      "icon": "images/item-icons/방어구/030_건틀렛.png"
+    },
+    {
+      "no": "3",
+      "name": "헤드기어",
+      "desc": "12 | 17",
+      "icon": "images/item-icons/방어구/003_헤드기어.png"
+    },
+    {
+      "no": "31",
+      "name": "타이푼 암",
+      "desc": "10 | 18",
+      "icon": "images/item-icons/방어구/031_타이푼_암.png"
+    },
+    {
+      "no": "4",
+      "name": "버것넷",
+      "desc": "15 | 24",
+      "icon": "images/item-icons/방어구/004_버것넷.png"
+    },
+    {
+      "no": "32",
+      "name": "어쌔신 글러브",
+      "desc": "13 | 25",
+      "icon": "images/item-icons/방어구/032_어쌔신_글러브.png"
+    },
+    {
+      "no": "5",
+      "name": "서클릿",
+      "desc": "19 | 30",
+      "icon": "images/item-icons/방어구/005_서클릿.png"
+    },
+    {
+      "no": "33",
+      "name": "크리쳐 가더",
+      "desc": "16 | 31",
+      "icon": "images/item-icons/방어구/033_크리쳐_가더.png"
+    },
+    {
+      "no": "6",
+      "name": "사피로스 캡",
+      "desc": "23 | 36",
+      "icon": "images/item-icons/방어구/006_사피로스_캡.png"
+    },
+    {
+      "no": "34",
+      "name": "플레어 글러브",
+      "desc": "19 | 37",
+      "icon": "images/item-icons/방어구/034_플레어_글러브.png"
+    },
+    {
+      "no": "7",
+      "name": "풀 헬름",
+      "desc": "27 | 42",
+      "icon": "images/item-icons/방어구/007_풀_헬름.png"
+    },
+    {
+      "no": "35",
+      "name": "엔틱 건틀렛",
+      "desc": "22 | 43",
+      "icon": "images/item-icons/방어구/035_엔틱_건틀렛.png"
+    },
+    {
+      "no": "8",
+      "name": "미스릴 헬름",
+      "desc": "31 | 48",
+      "icon": "images/item-icons/방어구/008_미스릴_헬름.png"
+    },
+    {
+      "no": "36",
+      "name": "레기온 건틀렛",
+      "desc": "26 | 49",
+      "icon": "images/item-icons/방어구/036_레기온_건틀렛.png"
+    },
+    {
+      "no": "9",
+      "name": "어비스 크라운",
+      "desc": "34 | 54",
+      "icon": "images/item-icons/방어구/009_어비스_크라운.png"
+    },
+    {
+      "no": "37",
+      "name": "노블 건틀렛",
+      "desc": "29 | 55",
+      "icon": "images/item-icons/방어구/037_노블_건틀렛.png"
+    },
+    {
+      "no": "10",
+      "name": "엘리멘탈 크라운",
+      "desc": "38 | 60",
+      "icon": "images/item-icons/방어구/010_엘리멘탈_크라운.png"
+    },
+    {
+      "no": "38",
+      "name": "비스트 가더",
+      "desc": "32 | 61",
+      "icon": "images/item-icons/방어구/038_비스트_가더.png"
+    },
+    {
+      "no": "11",
+      "name": "에텔 티아라",
+      "desc": "42 | 66",
+      "icon": "images/item-icons/방어구/011_에텔_티아라.png"
+    },
+    {
+      "no": "39",
+      "name": "그레이스건틀렛",
+      "desc": "35 | 67",
+      "icon": "images/item-icons/방어구/039_그레이스건틀렛.png"
+    },
+    {
+      "no": "12",
+      "name": "가디언 티아라",
+      "desc": "46 | 72",
+      "icon": "images/item-icons/방어구/012_가디언_티아라.png"
+    },
+    {
+      "no": "40",
+      "name": "코튼 글러브",
+      "desc": "38 | 73",
+      "icon": "images/item-icons/방어구/040_코튼_글러브.png"
+    },
+    {
+      "no": "13",
+      "name": "엠프레스 코로넷",
+      "desc": "50 | 78",
+      "icon": "images/item-icons/방어구/013_엠프레스_코로넷.png"
+    },
+    {
+      "no": "41",
+      "name": "세비지 건틀렛",
+      "desc": "41 | 79",
+      "icon": "images/item-icons/방어구/041_세비지_건틀렛.png"
+    },
+    {
+      "no": "14",
+      "name": "페이스 오프",
+      "desc": "54 | 84",
+      "icon": "images/item-icons/방어구/014_페이스_오프.png"
+    },
+    {
+      "no": "42",
+      "name": "블러디 로어",
+      "desc": "45 | 85",
+      "icon": "images/item-icons/방어구/042_블러디_로어.png"
+    },
+    {
+      "no": "15",
+      "name": "실크 로브",
+      "desc": "5 | 1",
+      "icon": "images/item-icons/방어구/015_실크_로브.png"
+    },
+    {
+      "no": "43",
+      "name": "부츠",
+      "desc": "4 | 2",
+      "icon": "images/item-icons/방어구/043_부츠.png"
+    },
+    {
+      "no": "16",
+      "name": "튜닛",
+      "desc": "9 | 8",
+      "icon": "images/item-icons/방어구/016_튜닛.png"
+    },
+    {
+      "no": "44",
+      "name": "스웨드 부츠",
+      "desc": "7 | 9",
+      "icon": "images/item-icons/방어구/044_스웨드_부츠.png"
+    },
+    {
+      "no": "17",
+      "name": "래더 아머",
+      "desc": "14 | 15",
+      "icon": "images/item-icons/방어구/017_래더_아머.png"
+    },
+    {
+      "no": "45",
+      "name": "브론즈 레깅스",
+      "desc": "10 | 16",
+      "icon": "images/item-icons/방어구/045_브론즈_레깅스.png"
+    },
+    {
+      "no": "18",
+      "name": "스케일 아머",
+      "desc": "18 | 22",
+      "icon": "images/item-icons/방어구/018_스케일_아머.png"
+    },
+    {
+      "no": "46",
+      "name": "아이언 레깅스",
+      "desc": "14 | 23",
+      "icon": "images/item-icons/방어구/046_아이언_레깅스.png"
+    },
+    {
+      "no": "19",
+      "name": "링 메일",
+      "desc": "23 | 28",
+      "icon": "images/item-icons/방어구/019_링_메일.png"
+    },
+    {
+      "no": "47",
+      "name": "사바톤",
+      "desc": "18 | 29",
+      "icon": "images/item-icons/방어구/047_사바톤.png"
+    },
+    {
+      "no": "20",
+      "name": "블래스트 아머",
+      "desc": "28 | 34",
+      "icon": "images/item-icons/방어구/020_블래스트_아머.png"
+    },
+    {
+      "no": "48",
+      "name": "버닝 사바톤",
+      "desc": "22 | 35",
+      "icon": "images/item-icons/방어구/048_버닝_사바톤.png"
+    },
+    {
+      "no": "21",
+      "name": "티어즈 아머",
+      "desc": "32 | 40",
+      "icon": "images/item-icons/방어구/021_티어즈_아머.png"
+    },
+    {
+      "no": "49",
+      "name": "블링크 슈즈",
+      "desc": "25 | 41",
+      "icon": "images/item-icons/방어구/049_블링크_슈즈.png"
+    },
+    {
+      "no": "22",
+      "name": "고딕 플레이트",
+      "desc": "37 | 46",
+      "icon": "images/item-icons/방어구/022_고딕_플레이트.png"
+    },
+    {
+      "no": "50",
+      "name": "엘븐 슈즈",
+      "desc": "29 | 47",
+      "icon": "images/item-icons/방어구/050_엘븐_슈즈.png"
+    },
+    {
+      "no": "23",
+      "name": "풀 플레이트 메일",
+      "desc": "42 | 52",
+      "icon": "images/item-icons/방어구/023_풀_플레이트_메일.png"
+    },
+    {
+      "no": "51",
+      "name": "메탈 그리브",
+      "desc": "32 | 53",
+      "icon": "images/item-icons/방어구/051_메탈_그리브.png"
+    },
+    {
+      "no": "24",
+      "name": "자이언트 메일",
+      "desc": "46 | 58",
+      "icon": "images/item-icons/방어구/024_자이언트_메일.png"
+    },
+    {
+      "no": "52",
+      "name": "둠 그리브",
+      "desc": "36 | 59",
+      "icon": "images/item-icons/방어구/052_둠_그리브.png"
+    },
+    {
+      "no": "25",
+      "name": "프로텍트 아머",
+      "desc": "51 | 64",
+      "icon": "images/item-icons/방어구/025_프로텍트_아머.png"
+    },
+    {
+      "no": "53",
+      "name": "어비스 그리브",
+      "desc": "40 | 65",
+      "icon": "images/item-icons/방어구/053_어비스_그리브.png"
+    },
+    {
+      "no": "26",
+      "name": "오딘 플레이트",
+      "desc": "56 | 70",
+      "icon": "images/item-icons/방어구/026_오딘_플레이트.png"
+    },
+    {
+      "no": "54",
+      "name": "스톰 그리브",
+      "desc": "43 | 71",
+      "icon": "images/item-icons/방어구/054_스톰_그리브.png"
+    },
+    {
+      "no": "27",
+      "name": "저거너트",
+      "desc": "61 | 76",
+      "icon": "images/item-icons/방어구/027_저거너트.png"
+    },
+    {
+      "no": "55",
+      "name": "데스바인딩부츠",
+      "desc": "47 | 77",
+      "icon": "images/item-icons/방어구/055_데스바인딩부츠.png"
+    },
+    {
+      "no": "28",
+      "name": "샤이닝 디펜서",
+      "desc": "66 | 82",
+      "icon": "images/item-icons/방어구/028_샤이닝_디펜서.png"
+    },
+    {
+      "no": "56",
+      "name": "슬레이프닐",
+      "desc": "50 | 83",
+      "icon": "images/item-icons/방어구/056_슬레이프닐.png"
+    }
+  ],
+  "액세서리": [
+    {
+      "no": "1",
+      "name": "근력의 반지",
+      "desc": "근력 +1 | 능력치 추가 : 각 반지 능력치 1 ~ 4\n최저 데미지 : 5 ~ 20\n최대 데미지 : 5 ~ 20\n방어력 : 3 ~ 10\n펜스 획득량 증가 : 5 ~ 10 %\n획득 경험치 증가 : 5 ~ 10 %\nHP : 50 ~ 200\nSP : 30 ~ 100\nTP : 5 ~ 30\n독 방지\n기절 방지\n혼란 방지\n포션 사용 불능 방지\n스킬 사용 불능 방지\n모든 상태 이상 방지\n행운\n포션 회복량 증가",
+      "icon": "images/item-icons/액세서리/001_근력의_반지.png"
+    },
+    {
+      "no": "2",
+      "name": "민첩의 반지",
+      "desc": "민첩 +1 | 능력치 추가 : 각 반지 능력치 1 ~ 4\n최저 데미지 : 5 ~ 20\n최대 데미지 : 5 ~ 20\n방어력 : 3 ~ 10\n펜스 획득량 증가 : 5 ~ 10 %\n획득 경험치 증가 : 5 ~ 10 %\nHP : 50 ~ 200\nSP : 30 ~ 100\nTP : 5 ~ 30\n독 방지\n기절 방지\n혼란 방지\n포션 사용 불능 방지\n스킬 사용 불능 방지\n모든 상태 이상 방지\n행운\n포션 회복량 증가",
+      "icon": "images/item-icons/액세서리/002_민첩의_반지.png"
+    },
+    {
+      "no": "3",
+      "name": "체력의 반지",
+      "desc": "체력 +1 | 능력치 추가 : 각 반지 능력치 1 ~ 4\n최저 데미지 : 5 ~ 20\n최대 데미지 : 5 ~ 20\n방어력 : 3 ~ 10\n펜스 획득량 증가 : 5 ~ 10 %\n획득 경험치 증가 : 5 ~ 10 %\nHP : 50 ~ 200\nSP : 30 ~ 100\nTP : 5 ~ 30\n독 방지\n기절 방지\n혼란 방지\n포션 사용 불능 방지\n스킬 사용 불능 방지\n모든 상태 이상 방지\n행운\n포션 회복량 증가",
+      "icon": "images/item-icons/액세서리/003_체력의_반지.png"
+    },
+    {
+      "no": "4",
+      "name": "지능의 반지",
+      "desc": "지능 +1 | 능력치 추가 : 각 반지 능력치 1 ~ 4\n최저 데미지 : 5 ~ 20\n최대 데미지 : 5 ~ 20\n방어력 : 3 ~ 10\n펜스 획득량 증가 : 5 ~ 10 %\n획득 경험치 증가 : 5 ~ 10 %\nHP : 50 ~ 200\nSP : 30 ~ 100\nTP : 5 ~ 30\n독 방지\n기절 방지\n혼란 방지\n포션 사용 불능 방지\n스킬 사용 불능 방지\n모든 상태 이상 방지\n행운\n포션 회복량 증가",
+      "icon": "images/item-icons/액세서리/004_지능의_반지.png"
+    }
+  ],
+  "세트아이템": [
+    {
+      "no": "1",
+      "name": "헌터 헬름",
+      "desc": "14 | 16",
+      "icon": "images/item-icons/세트아이템/001_헌터_헬름.png"
+    },
+    {
+      "no": "1",
+      "name": "템플 서클릿",
+      "desc": "24 | 30",
+      "icon": "images/item-icons/세트아이템/001_템플_서클릿.png"
+    },
+    {
+      "no": "2",
+      "name": "헌터 아머",
+      "desc": "17 | 16",
+      "icon": "images/item-icons/세트아이템/002_헌터_아머.png"
+    },
+    {
+      "no": "2",
+      "name": "템플 아머",
+      "desc": "29 | 30",
+      "icon": "images/item-icons/세트아이템/002_템플_아머.png"
+    },
+    {
+      "no": "3",
+      "name": "헌터 건틀렛",
+      "desc": "12 | 16",
+      "icon": "images/item-icons/세트아이템/003_헌터_건틀렛.png"
+    },
+    {
+      "no": "3",
+      "name": "템플 글러브",
+      "desc": "20 | 30",
+      "icon": "images/item-icons/세트아이템/003_템플_글러브.png"
+    },
+    {
+      "no": "4",
+      "name": "헌터 그리브",
+      "desc": "13 | 16",
+      "icon": "images/item-icons/세트아이템/004_헌터_그리브.png"
+    },
+    {
+      "no": "4",
+      "name": "템플 그리브",
+      "desc": "23 | 30",
+      "icon": "images/item-icons/세트아이템/004_템플_그리브.png"
+    },
+    {
+      "no": "1",
+      "name": "루나 크라운",
+      "desc": "32 | 44",
+      "icon": "images/item-icons/세트아이템/001_루나_크라운.png"
+    },
+    {
+      "no": "1",
+      "name": "레인저 헬름",
+      "desc": "43 | 58",
+      "icon": "images/item-icons/세트아이템/001_레인저_헬름.png"
+    },
+    {
+      "no": "2",
+      "name": "루나 플레이트",
+      "desc": "38 | 44",
+      "icon": "images/item-icons/세트아이템/002_루나_플레이트.png"
+    },
+    {
+      "no": "2",
+      "name": "레인저 아머",
+      "desc": "52 | 58",
+      "icon": "images/item-icons/세트아이템/002_레인저_아머.png"
+    },
+    {
+      "no": "3",
+      "name": "루나 글러브",
+      "desc": "27 | 44",
+      "icon": "images/item-icons/세트아이템/003_루나_글러브.png"
+    },
+    {
+      "no": "3",
+      "name": "레인저 건틀렛",
+      "desc": "36 | 58",
+      "icon": "images/item-icons/세트아이템/003_레인저_건틀렛.png"
+    },
+    {
+      "no": "4",
+      "name": "루나 슈즈",
+      "desc": "30 | 44",
+      "icon": "images/item-icons/세트아이템/004_루나_슈즈.png"
+    },
+    {
+      "no": "4",
+      "name": "레인저 그리브",
+      "desc": "41 | 58",
+      "icon": "images/item-icons/세트아이템/004_레인저_그리브.png"
+    },
+    {
+      "no": "1",
+      "name": "페이트 헬름",
+      "desc": "51 | 72",
+      "icon": "images/item-icons/세트아이템/001_페이트_헬름.png"
+    },
+    {
+      "no": "1",
+      "name": "인피니티 크라운",
+      "desc": "56 | 86",
+      "icon": "images/item-icons/세트아이템/001_인피니티_크라운.png"
+    },
+    {
+      "no": "2",
+      "name": "페이트 아머",
+      "desc": "62 | 72",
+      "icon": "images/item-icons/세트아이템/002_페이트_아머.png"
+    },
+    {
+      "no": "2",
+      "name": "인피니티 아머",
+      "desc": "68 | 86",
+      "icon": "images/item-icons/세트아이템/002_인피니티_아머.png"
+    },
+    {
+      "no": "3",
+      "name": "페이트 건틀렛",
+      "desc": "42 | 72",
+      "icon": "images/item-icons/세트아이템/003_페이트_건틀렛.png"
+    },
+    {
+      "no": "3",
+      "name": "인피니티 건틀렛",
+      "desc": "47 | 86",
+      "icon": "images/item-icons/세트아이템/003_인피니티_건틀렛.png"
+    },
+    {
+      "no": "4",
+      "name": "페이트 그리브",
+      "desc": "48 | 72",
+      "icon": "images/item-icons/세트아이템/004_페이트_그리브.png"
+    },
+    {
+      "no": "4",
+      "name": "인피니티 그리브",
+      "desc": "52 | 86",
+      "icon": "images/item-icons/세트아이템/004_인피니티_그리브.png"
+    }
+  ],
+  "잡화": [
+    {
+      "no": "1",
+      "name": "소형 HP 포션",
+      "desc": "HP를 100만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/001_소형_HP_포션.png"
+    },
+    {
+      "no": "2",
+      "name": "중형 HP 포션",
+      "desc": "HP를 200만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/002_중형_HP_포션.png"
+    },
+    {
+      "no": "3",
+      "name": "대형 HP 포션",
+      "desc": "HP를 400만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/003_대형_HP_포션.png"
+    },
+    {
+      "no": "4",
+      "name": "강력 Hp 포션",
+      "desc": "HP를 600만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/004_강력_Hp_포션.png"
+    },
+    {
+      "no": "5",
+      "name": "소형 SP 포션",
+      "desc": "SP를 50만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/005_소형_SP_포션.png"
+    },
+    {
+      "no": "6",
+      "name": "중형 SP 포션",
+      "desc": "SP를 100만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/006_중형_SP_포션.png"
+    },
+    {
+      "no": "7",
+      "name": "대형 SP 포션",
+      "desc": "SP를 150만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/007_대형_SP_포션.png"
+    },
+    {
+      "no": "8",
+      "name": "강력 SP 포션",
+      "desc": "SP를 200만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/008_강력_SP_포션.png"
+    },
+    {
+      "no": "9",
+      "name": "소형 활력 포션",
+      "desc": "HP를 80 회복, SP를 40 회복합니다.",
+      "icon": "images/item-icons/잡화/009_소형_활력_포션.png"
+    },
+    {
+      "no": "10",
+      "name": "중형 활력 포션",
+      "desc": "HP를 160 회복, SP를 80 회복합니다.",
+      "icon": "images/item-icons/잡화/010_중형_활력_포션.png"
+    },
+    {
+      "no": "11",
+      "name": "대형 활력 포션",
+      "desc": "HP를 320 회복, SP를 120 회복합니다.",
+      "icon": "images/item-icons/잡화/011_대형_활력_포션.png"
+    },
+    {
+      "no": "12",
+      "name": "강력 활력 포션",
+      "desc": "HP를 480 회복, SP를 160 회복합니다.",
+      "icon": "images/item-icons/잡화/012_강력_활력_포션.png"
+    },
+    {
+      "no": "13",
+      "name": "소형 TP 포션",
+      "desc": "TP를 10만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/013_소형_TP_포션.png"
+    },
+    {
+      "no": "14",
+      "name": "중형 TP 포션",
+      "desc": "TP를 20만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/014_중형_TP_포션.png"
+    },
+    {
+      "no": "15",
+      "name": "대형 TP 포션",
+      "desc": "TP를 30만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/015_대형_TP_포션.png"
+    },
+    {
+      "no": "16",
+      "name": "강력 TP 포션",
+      "desc": "TP를 40만큼 회복합니다.",
+      "icon": "images/item-icons/잡화/016_강력_TP_포션.png"
+    },
+    {
+      "no": "17",
+      "name": "하이퍼 포션",
+      "desc": "HP, SP, TP를 모두 회복합니다.",
+      "icon": "images/item-icons/잡화/017_하이퍼_포션.png"
+    },
+    {
+      "no": "18",
+      "name": "엘릭서 (근력)",
+      "desc": "근력 +1의 효과를 영구적으로 부여합니다.",
+      "icon": "images/item-icons/잡화/018_엘릭서_(근력).png"
+    },
+    {
+      "no": "19",
+      "name": "엘릭서 (체력)",
+      "desc": "체력 +1의 효과를 영구적으로 부여합니다.",
+      "icon": "images/item-icons/잡화/019_엘릭서_(체력).png"
+    },
+    {
+      "no": "20",
+      "name": "엘릭서 (민첩)",
+      "desc": "민첩 +1의 효과를 영구적으로 부여합니다.",
+      "icon": "images/item-icons/잡화/020_엘릭서_(민첩).png"
+    },
+    {
+      "no": "21",
+      "name": "엘릭서 (집중)",
+      "desc": "집중 +1의 효과를 영구적으로 부여합니다.",
+      "icon": "images/item-icons/잡화/021_엘릭서_(집중).png"
+    },
+    {
+      "no": "22",
+      "name": "루비",
+      "desc": "화염의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/022_루비.png"
+    },
+    {
+      "no": "23",
+      "name": "루비",
+      "desc": "화염의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/023_루비.png"
+    },
+    {
+      "no": "24",
+      "name": "루비",
+      "desc": "화염의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/024_루비.png"
+    },
+    {
+      "no": "25",
+      "name": "루비",
+      "desc": "화염의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/025_루비.png"
+    },
+    {
+      "no": "26",
+      "name": "루비",
+      "desc": "화염의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/026_루비.png"
+    },
+    {
+      "no": "27",
+      "name": "사파이어",
+      "desc": "냉기의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/027_사파이어.png"
+    },
+    {
+      "no": "28",
+      "name": "사파이어",
+      "desc": "냉기의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/028_사파이어.png"
+    },
+    {
+      "no": "29",
+      "name": "사파이어",
+      "desc": "냉기의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/029_사파이어.png"
+    },
+    {
+      "no": "30",
+      "name": "사파이어",
+      "desc": "냉기의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/030_사파이어.png"
+    },
+    {
+      "no": "31",
+      "name": "사파이어",
+      "desc": "냉기의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/031_사파이어.png"
+    },
+    {
+      "no": "32",
+      "name": "에메랄드",
+      "desc": "맹독의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/032_에메랄드.png"
+    },
+    {
+      "no": "33",
+      "name": "에메랄드",
+      "desc": "맹독의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/033_에메랄드.png"
+    },
+    {
+      "no": "34",
+      "name": "에메랄드",
+      "desc": "맹독의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/034_에메랄드.png"
+    },
+    {
+      "no": "35",
+      "name": "에메랄드",
+      "desc": "맹독의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/035_에메랄드.png"
+    },
+    {
+      "no": "36",
+      "name": "에메랄드",
+      "desc": "맹독의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/036_에메랄드.png"
+    },
+    {
+      "no": "37",
+      "name": "토파즈",
+      "desc": "마비의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/037_토파즈.png"
+    },
+    {
+      "no": "38",
+      "name": "토파즈",
+      "desc": "마비의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/038_토파즈.png"
+    },
+    {
+      "no": "39",
+      "name": "토파즈",
+      "desc": "마비의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/039_토파즈.png"
+    },
+    {
+      "no": "40",
+      "name": "토파즈",
+      "desc": "마비의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/040_토파즈.png"
+    },
+    {
+      "no": "41",
+      "name": "토파즈",
+      "desc": "마비의 오브를 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/041_토파즈.png"
+    },
+    {
+      "no": "42",
+      "name": "신비한 돌",
+      "desc": "각종 보석과 조합하여 오브를 만드는 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/042_신비한_돌.png"
+    },
+    {
+      "no": "43",
+      "name": "화염의 오브",
+      "desc": "무기와 결합하면 3%의 확률로 \n화염 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/043_화염의_오브.png"
+    },
+    {
+      "no": "44",
+      "name": "화염의 오브",
+      "desc": "무기와 결합하면 4%의 확률로 \n화염 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/044_화염의_오브.png"
+    },
+    {
+      "no": "45",
+      "name": "화염의 오브",
+      "desc": "무기와 결합하면 5%의 확률로 \n화염 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/045_화염의_오브.png"
+    },
+    {
+      "no": "46",
+      "name": "화염의 오브",
+      "desc": "무기와 결합하면 6%의 확률로 \n화염 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/046_화염의_오브.png"
+    },
+    {
+      "no": "47",
+      "name": "화염의 오브",
+      "desc": "무기와 결합하면 7%의 확률로 \n화염 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/047_화염의_오브.png"
+    },
+    {
+      "no": "48",
+      "name": "냉기의 오브",
+      "desc": "무기와 결합하면 3%의 확률로 \n냉기 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/048_냉기의_오브.png"
+    },
+    {
+      "no": "49",
+      "name": "냉기의 오브",
+      "desc": "무기와 결합하면 4%의 확률로 \n냉기 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/049_냉기의_오브.png"
+    },
+    {
+      "no": "50",
+      "name": "냉기의 오브",
+      "desc": "무기와 결합하면 5%의 확률로 \n냉기 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/050_냉기의_오브.png"
+    },
+    {
+      "no": "51",
+      "name": "냉기의 오브",
+      "desc": "무기와 결합하면 6%의 확률로 \n냉기 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/051_냉기의_오브.png"
+    },
+    {
+      "no": "52",
+      "name": "냉기의 오브",
+      "desc": "무기와 결합하면 7%의 확률로 \n냉기 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/052_냉기의_오브.png"
+    },
+    {
+      "no": "53",
+      "name": "맹독의 오브",
+      "desc": "무기와 결합하면 3%의 확률로 \n맹독 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/053_맹독의_오브.png"
+    },
+    {
+      "no": "54",
+      "name": "맹독의 오브",
+      "desc": "무기와 결합하면 4%의 확률로 \n맹독 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/054_맹독의_오브.png"
+    },
+    {
+      "no": "55",
+      "name": "맹독의 오브",
+      "desc": "무기와 결합하면 5%의 확률로 \n맹독 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/055_맹독의_오브.png"
+    },
+    {
+      "no": "56",
+      "name": "맹독의 오브",
+      "desc": "무기와 결합하면 6%의 확률로 \n맹독 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/056_맹독의_오브.png"
+    },
+    {
+      "no": "57",
+      "name": "맹독의 오브",
+      "desc": "무기와 결합하면 7%의 확률로 \n맹독 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/057_맹독의_오브.png"
+    },
+    {
+      "no": "58",
+      "name": "마비의 오브",
+      "desc": "무기와 결합하면 3%의 확률로 \n마비 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/058_마비의_오브.png"
+    },
+    {
+      "no": "59",
+      "name": "마비의 오브",
+      "desc": "무기와 결합하면 4%의 확률로 \n마비 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/059_마비의_오브.png"
+    },
+    {
+      "no": "60",
+      "name": "마비의 오브",
+      "desc": "무기와 결합하면 5%의 확률로 \n마비 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/060_마비의_오브.png"
+    },
+    {
+      "no": "61",
+      "name": "마비의 오브",
+      "desc": "무기와 결합하면 6%의 확률로 \n마비 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/061_마비의_오브.png"
+    },
+    {
+      "no": "62",
+      "name": "마비의 오브",
+      "desc": "무기와 결합하면 7%의 확률로 \n마비 속성 공격이 발동됩니다.",
+      "icon": "images/item-icons/잡화/062_마비의_오브.png"
+    },
+    {
+      "no": "63",
+      "name": "근력의 원석",
+      "desc": "근력의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/063_근력의_원석.png"
+    },
+    {
+      "no": "64",
+      "name": "근력의 원석",
+      "desc": "근력의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/064_근력의_원석.png"
+    },
+    {
+      "no": "65",
+      "name": "근력의 원석",
+      "desc": "근력의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/065_근력의_원석.png"
+    },
+    {
+      "no": "66",
+      "name": "근력의 원석",
+      "desc": "근력의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/066_근력의_원석.png"
+    },
+    {
+      "no": "67",
+      "name": "근력의 원석",
+      "desc": "근력의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/067_근력의_원석.png"
+    },
+    {
+      "no": "68",
+      "name": "체력의 원석",
+      "desc": "체력의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/068_체력의_원석.png"
+    },
+    {
+      "no": "69",
+      "name": "체력의 원석",
+      "desc": "체력의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/069_체력의_원석.png"
+    },
+    {
+      "no": "70",
+      "name": "체력의 원석",
+      "desc": "체력의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/070_체력의_원석.png"
+    },
+    {
+      "no": "71",
+      "name": "체력의 원석",
+      "desc": "체력의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/071_체력의_원석.png"
+    },
+    {
+      "no": "72",
+      "name": "체력의 원석",
+      "desc": "체력의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/072_체력의_원석.png"
+    },
+    {
+      "no": "73",
+      "name": "민첩의 원석",
+      "desc": "민첩의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/073_민첩의_원석.png"
+    },
+    {
+      "no": "74",
+      "name": "민첩의 원석",
+      "desc": "민첩의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/074_민첩의_원석.png"
+    },
+    {
+      "no": "75",
+      "name": "민첩의 원석",
+      "desc": "민첩의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/075_민첩의_원석.png"
+    },
+    {
+      "no": "76",
+      "name": "민첩의 원석",
+      "desc": "민첩의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/076_민첩의_원석.png"
+    },
+    {
+      "no": "77",
+      "name": "민첩의 원석",
+      "desc": "민첩의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/077_민첩의_원석.png"
+    },
+    {
+      "no": "78",
+      "name": "집중의 원석",
+      "desc": "집중의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/078_집중의_원석.png"
+    },
+    {
+      "no": "79",
+      "name": "집중의 원석",
+      "desc": "집중의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/079_집중의_원석.png"
+    },
+    {
+      "no": "80",
+      "name": "집중의 원석",
+      "desc": "집중의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/080_집중의_원석.png"
+    },
+    {
+      "no": "81",
+      "name": "집중의 원석",
+      "desc": "집중의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/081_집중의_원석.png"
+    },
+    {
+      "no": "82",
+      "name": "집중의 원석",
+      "desc": "집중의 결정을 만들기 위한 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/082_집중의_원석.png"
+    },
+    {
+      "no": "83",
+      "name": "촉매석",
+      "desc": "각종 원석과 조합하여 결정을 만드는 조합 재료입니다.",
+      "icon": "images/item-icons/잡화/083_촉매석.png"
+    },
+    {
+      "no": "84",
+      "name": "근력의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n근력 + 1의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/084_근력의_결정.png"
+    },
+    {
+      "no": "85",
+      "name": "근력의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n근력 + 2의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/085_근력의_결정.png"
+    },
+    {
+      "no": "86",
+      "name": "근력의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n근력 + 3의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/086_근력의_결정.png"
+    },
+    {
+      "no": "87",
+      "name": "근력의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n근력 + 4의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/087_근력의_결정.png"
+    },
+    {
+      "no": "88",
+      "name": "근력의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n근력 + 5의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/088_근력의_결정.png"
+    },
+    {
+      "no": "89",
+      "name": "체력의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n체력 + 1의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/089_체력의_결정.png"
+    },
+    {
+      "no": "90",
+      "name": "체력의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n체력 + 2의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/090_체력의_결정.png"
+    },
+    {
+      "no": "91",
+      "name": "체력의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n체력 + 3의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/091_체력의_결정.png"
+    },
+    {
+      "no": "92",
+      "name": "체력의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n체력 + 4의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/092_체력의_결정.png"
+    },
+    {
+      "no": "93",
+      "name": "체력의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n체력 + 5의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/093_체력의_결정.png"
+    },
+    {
+      "no": "94",
+      "name": "민첩의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n민첩 + 1의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/094_민첩의_결정.png"
+    },
+    {
+      "no": "95",
+      "name": "민첩의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n민첩 + 2의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/095_민첩의_결정.png"
+    },
+    {
+      "no": "96",
+      "name": "민첩의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n민첩 + 3의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/096_민첩의_결정.png"
+    },
+    {
+      "no": "97",
+      "name": "민첩의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n민첩 + 4의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/097_민첩의_결정.png"
+    },
+    {
+      "no": "98",
+      "name": "민첩의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n민첩 + 5의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/098_민첩의_결정.png"
+    },
+    {
+      "no": "99",
+      "name": "집중의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n집중 + 1의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/099_집중의_결정.png"
+    },
+    {
+      "no": "100",
+      "name": "집중의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n집중 + 2의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/100_집중의_결정.png"
+    },
+    {
+      "no": "101",
+      "name": "집중의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n집중 + 3의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/101_집중의_결정.png"
+    },
+    {
+      "no": "102",
+      "name": "집중의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n집중 + 4의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/102_집중의_결정.png"
+    },
+    {
+      "no": "103",
+      "name": "집중의 결정",
+      "desc": "장비와 결합하면 해당 장비에 \n집중 + 5의 능력이 추가됩니다.",
+      "icon": "images/item-icons/잡화/103_집중의_결정.png"
+    },
+    {
+      "no": "104",
+      "name": "레물루스의 가호 (근력)",
+      "desc": "인벤토리에 소지하면 근력+3의 효과가 적용됩니다.",
+      "icon": "images/item-icons/잡화/104_레물루스의_가호_(근력).png"
+    },
+    {
+      "no": "105",
+      "name": "레물루스의 가호 (체력)",
+      "desc": "인벤토리에 소지하면 체력+3의 효과가 적용됩니다.",
+      "icon": "images/item-icons/잡화/105_레물루스의_가호_(체력).png"
+    },
+    {
+      "no": "106",
+      "name": "레물루스의 가호 (민첩)",
+      "desc": "인벤토리에 소지하면 민첩+3의 효과가 적용됩니다.",
+      "icon": "images/item-icons/잡화/106_레물루스의_가호_(민첩).png"
+    },
+    {
+      "no": "107",
+      "name": "레물루스의 가호 (집중)",
+      "desc": "인벤토리에 소지하면 집중+3의 효과가 적용됩니다.",
+      "icon": "images/item-icons/잡화/107_레물루스의_가호_(집중).png"
+    },
+    {
+      "no": "108",
+      "name": "확인주문서",
+      "desc": "미확인 아이템의 상세 정보를 확인할 수 있습니다.",
+      "icon": "images/item-icons/잡화/108_확인주문서.png"
+    },
+    {
+      "no": "109",
+      "name": "귀환주문서",
+      "desc": "근접한 마을로 귀환합니다.",
+      "icon": "images/item-icons/잡화/109_귀환주문서.png"
+    },
+    {
+      "no": "110",
+      "name": "무기강화주문서",
+      "desc": "무기의 고유 능력치를 강화합니다.",
+      "icon": "images/item-icons/잡화/110_무기강화주문서.png"
+    },
+    {
+      "no": "111",
+      "name": "방어구강화주문서",
+      "desc": "방어구의 고유 능력치를 강화합니다.",
+      "icon": "images/item-icons/잡화/111_방어구강화주문서.png"
+    },
+    {
+      "no": "112",
+      "name": "해독제",
+      "desc": "중독 상태를 회복합니다.",
+      "icon": "images/item-icons/잡화/112_해독제.png"
+    },
+    {
+      "no": "113",
+      "name": "진정제",
+      "desc": "혼란 상태를 회복합니다.",
+      "icon": "images/item-icons/잡화/113_진정제.png"
+    },
+    {
+      "no": "114",
+      "name": "각성제",
+      "desc": "스킬 사용 불능 상태를 회복합니다.",
+      "icon": "images/item-icons/잡화/114_각성제.png"
+    },
+    {
+      "no": "115",
+      "name": "생명의 정수",
+      "desc": "포션 사용 불능 상태를 회복합니다.",
+      "icon": "images/item-icons/잡화/115_생명의_정수.png"
+    },
+    {
+      "no": "116",
+      "name": "치유의 씨앗",
+      "desc": "기절을 제외한 모든 상태 이상을 회복합니다.",
+      "icon": "images/item-icons/잡화/116_치유의_씨앗.png"
+    },
+    {
+      "no": "117",
+      "name": "헌터 세트 파츠 주머니",
+      "desc": "주머니를 사용하시면 헌터 세트 장비 중 \n하나의 파츠를 얻을 수 있습니다.",
+      "icon": "images/item-icons/잡화/117_헌터_세트_파츠_주머니.png"
+    },
+    {
+      "no": "118",
+      "name": "템플 세트 파츠 주머니",
+      "desc": "주머니를 사용하시면 템플 세트 장비 중 \n하나의 파츠를 얻을 수 있습니다.",
+      "icon": "images/item-icons/잡화/118_템플_세트_파츠_주머니.png"
+    },
+    {
+      "no": "119",
+      "name": "루나 세트 파츠 주머니",
+      "desc": "주머니를 사용하시면 루나 세트 장비 중 \n하나의 파츠를 얻을 수 있습니다.",
+      "icon": "images/item-icons/잡화/119_루나_세트_파츠_주머니.png"
+    },
+    {
+      "no": "120",
+      "name": "레인저 세트 파츠 주머니",
+      "desc": "주머니를 사용하시면 레인저 세트 장비 중 \n하나의 파츠를 얻을 수 있습니다.",
+      "icon": "images/item-icons/잡화/120_레인저_세트_파츠_주머니.png"
+    },
+    {
+      "no": "121",
+      "name": "페이트 세트 파츠 주머니",
+      "desc": "주머니를 사용하시면 페이트 세트 장비 중 \n하나의 파츠를 얻을 수 있습니다.",
+      "icon": "images/item-icons/잡화/121_페이트_세트_파츠_주머니.png"
+    },
+    {
+      "no": "122",
+      "name": "인피니티 세트 파츠 주머니",
+      "desc": "주머니를 사용하시면 인피니티 세트 장비 중 \n하나의 파츠를 얻을 수 있습니다.",
+      "icon": "images/item-icons/잡화/122_인피니티_세트_파츠_주머니.png"
+    }
+  ],
+  "브랜드샵": [
+    {
+      "no": "1",
+      "name": "무기 강화 주문서",
+      "desc": "대장장이를 통해 무기를 제련하는데 \n사용됩니다. 실패 확률이 없습니다. | 90 포인트",
+      "icon": "images/item-icons/브랜드샵/001_무기_강화_주문서.png"
+    },
+    {
+      "no": "2",
+      "name": "방어구 강화 주문서",
+      "desc": "대장장이를 통해 방어구를 제련하는데 사용됩니다. 실패 확률이 없습니다. | 90 포인트",
+      "icon": "images/item-icons/브랜드샵/002_방어구_강화_주문서.png"
+    },
+    {
+      "no": "3",
+      "name": "소켓 생성 주문서",
+      "desc": "장비에 오브 또는 결정을 장착할 수 \n있는 비어있는 소켓을 생성합니다. \n하나의 장비에 생설될 수 있는 \n소켓의 수는 최대 2개 입니다. | 90 포인트",
+      "icon": "images/item-icons/브랜드샵/003_소켓_생성_주문서.png"
+    },
+    {
+      "no": "4",
+      "name": "소켓 초기화 주문서",
+      "desc": "장비의 소켓에 장착된 오브 또는 \n결정을 초기화합니다.\n장착되어 있던 오브 및 결정은 \n삭제되며, 다른 오브 및 결정을 \n장착할 수 있도록 변합니다. | 90 포인트",
+      "icon": "images/item-icons/브랜드샵/004_소켓_초기화_주문서.png"
+    },
+    {
+      "no": "5",
+      "name": "능력치 초기화석",
+      "desc": "캐릭터 육성에 사용된 능력치 포인트를\n모두 사용 가능한 포인트로 환원합니다. | 490 포인트",
+      "icon": "images/item-icons/브랜드샵/005_능력치_초기화석.png"
+    },
+    {
+      "no": "6",
+      "name": "스킬 초기화석",
+      "desc": "스킬 육성에 사용된 스킬 포인트를\n모두 사용 가능한 포인트로 환원합니다. | 490 포인트",
+      "icon": "images/item-icons/브랜드샵/006_스킬_초기화석.png"
+    },
+    {
+      "no": "7",
+      "name": "부활석",
+      "desc": "현재 상태 그대로 부활합니다. | 90 포인트",
+      "icon": "images/item-icons/브랜드샵/007_부활석.png"
+    },
+    {
+      "no": "8",
+      "name": "현자의 돌",
+      "desc": "대장장이를 통해 장비를 재연마하여\n새로운 레어 등급과 옵션을 지닌 \n장비로 바꿔줍니다. | 190 포인트",
+      "icon": "images/item-icons/브랜드샵/008_현자의_돌.png"
+    },
+    {
+      "no": "9",
+      "name": "결합의 달인",
+      "desc": "인벤토리에 소지하면 결합 성공 확률을\n100%로 높여주는 부적입니다. | 490 포인트",
+      "icon": "images/item-icons/브랜드샵/009_결합의_달인.png"
+    },
+    {
+      "no": "10",
+      "name": "조합의 달인",
+      "desc": "인벤토리에 소지하면 조합 성공 확률을\n100%로 높여주는 부적입니다. | 490 포인트",
+      "icon": "images/item-icons/브랜드샵/010_조합의_달인.png"
+    },
+    {
+      "no": "11",
+      "name": "경험치 스크롤",
+      "desc": "스크롤을 사용하시면 경험치를 획득하실 수 있습니다. | 190 포인트",
+      "icon": "images/item-icons/브랜드샵/011_경험치_스크롤.png"
+    },
+    {
+      "no": "12",
+      "name": "반지 주머니",
+      "desc": "주머니를 사용하시면 최고 레어 등급의\n반지를 얻을 수 있습니다. | 190 포인트",
+      "icon": "images/item-icons/브랜드샵/012_반지_주머니.png"
+    }
+  ]
+}

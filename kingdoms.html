@@ -1,0 +1,699 @@
+<title>킹덤즈: 운명의 굴레</title>
+<style>
+  /* ---------- tokens ---------- */
+  :root{
+    --bg: #0d0f1a;
+    --surface: #161a2c;
+    --surface-2: #1f2438;
+    --gold: #c9a24b;
+    --gold-soft: #e0c377;
+    --crimson: #9c3b49;
+    --crimson-soft: #c15d6a;
+    --ink: #ede7d8;
+    --muted: #9296ad;
+    --line: rgba(201,162,75,0.18);
+
+    --font-display: "Nanum Myeongjo", "Noto Serif KR", "Batang", "궁서", serif;
+    --font-body: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", sans-serif;
+
+    --container: 1180px;
+    --sp-1: .5rem;  --sp-2: 1rem;  --sp-3: 1.5rem;
+    --sp-4: 2.5rem; --sp-5: 4rem;  --sp-6: 6.5rem;
+  }
+
+  /* single committed dark world: the game's night-and-betrayal palette
+     doesn't invert cleanly to daylight, so both color-scheme signals
+     resolve to the same tokens on purpose. */
+  @media (prefers-color-scheme: light){ :root{ } }
+  :root[data-theme="light"]{ }
+  :root[data-theme="dark"]{ }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--font-body); line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{ font-family:var(--font-display); text-wrap:balance; margin:0; }
+  p{ margin:0; }
+  a{ color:inherit; text-decoration:none; }
+  ul{ margin:0; padding:0; list-style:none; }
+  img,svg{ display:block; max-width:100%; }
+  :focus-visible{ outline:2px solid var(--gold-soft); outline-offset:3px; border-radius:2px; }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration:.001ms !important; animation-iteration-count:1 !important; transition-duration:.001ms !important; scroll-behavior:auto !important; }
+  }
+
+  .container{ max-width:var(--container); margin-inline:auto; padding-inline:clamp(1.25rem,4vw,2.5rem); }
+  .eyebrow{
+    font-size:.75rem; letter-spacing:.22em; color:var(--gold-soft);
+    text-transform:uppercase; font-weight:600; margin:0 0 .6rem;
+  }
+  .section-head{ max-width:640px; margin-bottom:var(--sp-4); }
+  .section-head h2{ font-size:clamp(1.7rem,3.2vw,2.5rem); font-weight:600; margin-bottom:.6rem; }
+  .section-head p.lede{ color:var(--muted); font-size:1.02rem; }
+
+  section{ scroll-margin-top:84px; }
+
+  /* reveal-on-scroll */
+  .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in-view{ opacity:1; transform:none; }
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:.5rem;
+    padding:.85rem 1.6rem; border-radius:3px; font-size:.95rem; font-weight:600;
+    border:1px solid transparent; cursor:pointer; white-space:nowrap;
+    transition:transform .15s ease, box-shadow .15s ease, background .2s ease, border-color .2s ease;
+  }
+  .btn-primary{ background:linear-gradient(180deg,var(--gold-soft),var(--gold)); color:#1a1406; }
+  .btn-primary:hover{ transform:translateY(-1px); box-shadow:0 10px 24px -10px rgba(201,162,75,.55); }
+  .btn-outline{ background:transparent; border-color:rgba(237,231,216,.35); color:var(--ink); }
+  .btn-outline:hover{ border-color:var(--ink); background:rgba(237,231,216,.06); }
+  .btn-small{ padding:.55rem 1.1rem; font-size:.85rem; }
+
+  /* ---------- header ---------- */
+  .site-header{
+    position:fixed; inset:0 0 auto 0; z-index:50;
+    background:rgba(11,13,22,.72); backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{ display:flex; align-items:center; gap:var(--sp-3); height:72px; }
+  .brand{ display:flex; align-items:center; gap:.65rem; margin-right:auto; }
+  .brand-text{ font-family:var(--font-display); font-size:1.05rem; letter-spacing:.02em; }
+  .brand-text em{ display:block; font-style:normal; font-size:.68rem; color:var(--gold-soft); letter-spacing:.24em; }
+  .primary-nav{ display:flex; gap:var(--sp-4); }
+  .primary-nav a{ font-size:.92rem; color:var(--muted); transition:color .15s ease; }
+  .primary-nav a:hover{ color:var(--ink); }
+  .nav-toggle{
+    display:none; flex-direction:column; justify-content:center; gap:5px;
+    width:38px; height:38px; background:none; border:1px solid var(--line); border-radius:3px; cursor:pointer;
+  }
+  .nav-toggle span{ height:1px; background:var(--ink); width:18px; margin-inline:auto; }
+
+  @media (max-width:860px){
+    .primary-nav{
+      position:fixed; inset:72px 0 auto 0; flex-direction:column; gap:0;
+      background:var(--surface); border-bottom:1px solid var(--line);
+      max-height:0; overflow:hidden; transition:max-height .3s ease;
+    }
+    .primary-nav.open{ max-height:340px; }
+    .primary-nav a{ padding:1rem clamp(1.25rem,4vw,2.5rem); border-top:1px solid var(--line); }
+    .nav-toggle{ display:flex; }
+    .header-inner .btn-small{ display:none; }
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative; min-height:100vh; display:flex; align-items:center;
+    padding-top:110px; padding-bottom:var(--sp-5); overflow:hidden;
+    background:
+      radial-gradient(60% 50% at 50% 0%, rgba(201,162,75,.10), transparent 60%),
+      var(--bg);
+  }
+  #embers{ position:absolute; inset:0; width:100%; height:100%; z-index:1; }
+  .hero-beam{ position:absolute; top:-10%; width:60vw; height:130%; z-index:0; opacity:.55; filter:blur(60px); }
+  .beam-gold{ left:-15vw; background:conic-gradient(from 200deg at 50% 0%, transparent, var(--gold) 12%, transparent 30%); }
+  .beam-crimson{ right:-15vw; background:conic-gradient(from 160deg at 50% 0%, transparent, var(--crimson) 12%, transparent 30%); }
+  .hero-inner{ position:relative; z-index:2; text-align:center; }
+  .hero-title{ font-size:clamp(2.6rem,7vw,4.8rem); font-weight:700; line-height:1.08; }
+  .hero-title span{ color:transparent; background:linear-gradient(180deg,var(--gold-soft),var(--gold)); -webkit-background-clip:text; background-clip:text; }
+  .hero-kicker{ margin-top:.9rem; letter-spacing:.32em; font-size:.78rem; color:var(--muted); }
+  .hero-copy{ margin:1.6rem auto 0; max-width:560px; color:var(--ink); opacity:.86; font-size:1.05rem; }
+  .hero-actions{ display:flex; gap:1rem; justify-content:center; margin-top:2.2rem; flex-wrap:wrap; }
+  .hero-meta{ display:flex; justify-content:center; gap:var(--sp-5); margin:var(--sp-5) 0 0; padding-top:var(--sp-3); border-top:1px solid var(--line); flex-wrap:wrap; }
+  .hero-meta > div{ text-align:center; }
+  .hero-meta dt{ font-size:.72rem; letter-spacing:.14em; color:var(--muted); text-transform:uppercase; margin-bottom:.35rem; }
+  .hero-meta dd{ margin:0; font-size:.95rem; color:var(--ink); font-weight:600; }
+
+  /* ---------- framed card (game item-slot motif) ---------- */
+  .frame{
+    position:relative; background:var(--surface); border:1px solid var(--line);
+    padding:var(--sp-3); border-radius:2px;
+  }
+  .frame::before, .frame::after{
+    content:""; position:absolute; width:14px; height:14px; pointer-events:none;
+  }
+  .frame::before{ top:-1px; left:-1px; border-top:2px solid var(--gold-soft); border-left:2px solid var(--gold-soft); }
+  .frame::after{ bottom:-1px; right:-1px; border-bottom:2px solid var(--gold-soft); border-right:2px solid var(--gold-soft); }
+  .frame.accent-crimson::before, .frame.accent-crimson::after{ border-color:var(--crimson-soft); }
+
+  /* ---------- news ---------- */
+  .news{ padding-block:var(--sp-6); }
+  .news-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp-3); }
+  .news-card{ display:flex; flex-direction:column; gap:.9rem; }
+  .news-tag{ align-self:flex-start; font-size:.7rem; letter-spacing:.12em; padding:.3rem .6rem; border:1px solid var(--gold-soft); color:var(--gold-soft); border-radius:2px; text-transform:uppercase; }
+  .news-card h3{ font-size:1.08rem; font-weight:600; }
+  .news-card p{ color:var(--muted); font-size:.92rem; }
+  @media (max-width:860px){ .news-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- about ---------- */
+  .about{ padding-block:var(--sp-6); background:linear-gradient(180deg,transparent,rgba(201,162,75,.035),transparent); }
+  .about-grid{ display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-5); align-items:start; }
+  .about-list{ display:flex; flex-direction:column; gap:1rem; }
+  .about-list li{ display:flex; gap:.85rem; font-size:.98rem; }
+  .about-list .mark{ color:var(--gold-soft); font-family:var(--font-display); flex:none; }
+  .scroll-panel{ padding:var(--sp-4); }
+  .scroll-panel h3{ font-size:1.15rem; margin-bottom:1rem; color:var(--gold-soft); }
+  .scroll-panel p{ color:var(--muted); font-size:.95rem; margin-bottom:1rem; }
+  .scroll-panel p:last-child{ margin-bottom:0; }
+  @media (max-width:900px){ .about-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- characters ---------- */
+  .characters{ padding-block:var(--sp-6); }
+  .char-grid{ display:grid; grid-template-columns:1fr 1fr; gap:var(--sp-3); margin-bottom:var(--sp-4); }
+  .char-card{ padding:var(--sp-4); position:relative; overflow:hidden; }
+  .char-card .glow{ position:absolute; inset:auto -30% -40% auto; width:220px; height:220px; border-radius:50%; filter:blur(60px); opacity:.35; z-index:0; }
+  .char-card.karle .glow{ background:var(--gold); }
+  .char-card.michael .glow{ background:var(--crimson); }
+  .char-card > *{ position:relative; z-index:1; }
+  .char-role{ font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; margin-bottom:.6rem; }
+  .char-card.karle .char-role{ color:var(--gold-soft); }
+  .char-card.michael .char-role{ color:var(--crimson-soft); }
+  .char-card h3{ font-size:1.6rem; margin-bottom:.9rem; }
+  .char-card p{ color:var(--muted); font-size:.95rem; }
+  .npc-row{ display:grid; grid-template-columns:repeat(4,1fr); gap:var(--sp-2); }
+  .npc-card{ padding:1.2rem; }
+  .npc-card h4{ font-family:var(--font-display); font-size:1rem; margin-bottom:.5rem; color:var(--ink); }
+  .npc-card p{ color:var(--muted); font-size:.85rem; }
+  @media (max-width:860px){ .char-grid, .npc-row{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .char-grid, .npc-row{ grid-template-columns:1fr; } }
+
+  /* ---------- classes ---------- */
+  .classes{ padding-block:var(--sp-6); background:rgba(255,255,255,.015); }
+  .class-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:var(--sp-3); }
+  .class-card{ padding:var(--sp-3); display:flex; flex-direction:column; gap:1rem; }
+  .class-icon{ width:44px; height:44px; color:var(--gold-soft); }
+  .class-card h3{ font-size:1.15rem; }
+  .class-card .flavor{ color:var(--muted); font-size:.88rem; }
+  .skill-list{ display:flex; flex-direction:column; gap:.4rem; margin-top:auto; padding-top:.8rem; border-top:1px solid var(--line); }
+  .skill-list li{ font-size:.82rem; color:var(--ink); opacity:.85; display:flex; gap:.5rem; }
+  .skill-list li::before{ content:"›"; color:var(--gold-soft); }
+  @media (max-width:900px){ .class-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:520px){ .class-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- systems ---------- */
+  .systems{ padding-block:var(--sp-6); }
+  .system-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp-3); }
+  .system-card{ padding:var(--sp-3); border-top:2px solid var(--gold-soft); background:var(--surface); }
+  .system-card:nth-child(3n+2){ border-top-color:var(--crimson-soft); }
+  .system-card .icon{ width:32px; height:32px; color:var(--muted); margin-bottom:.9rem; }
+  .system-card h3{ font-size:1.02rem; margin-bottom:.5rem; }
+  .system-card p{ color:var(--muted); font-size:.88rem; }
+  @media (max-width:900px){ .system-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .system-grid{ grid-template-columns:1fr; } }
+
+  /* ---------- items ---------- */
+  .items{ padding-block:var(--sp-6); background:rgba(255,255,255,.015); }
+  .stat-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:var(--sp-2); margin-bottom:var(--sp-5); }
+  .stat-tile{ padding:1.2rem 1rem; text-align:center; }
+  .stat-tile .num{ font-family:var(--font-display); font-size:1.9rem; font-variant-numeric:tabular-nums; color:var(--gold-soft); }
+  .stat-tile .lbl{ font-size:.78rem; color:var(--muted); margin-top:.3rem; }
+  @media (max-width:900px){ .stat-grid{ grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:520px){ .stat-grid{ grid-template-columns:repeat(2,1fr); } }
+
+  .price-wrap{ display:grid; grid-template-columns:1.1fr .9fr; gap:var(--sp-4); align-items:start; }
+  .price-table{ width:100%; border-collapse:collapse; font-size:.92rem; }
+  .price-table caption{ text-align:left; color:var(--gold-soft); font-family:var(--font-display); font-size:1.05rem; margin-bottom:1rem; }
+  .price-table th, .price-table td{ padding:.7rem .5rem; border-bottom:1px solid var(--line); text-align:left; }
+  .price-table td:last-child, .price-table th:last-child{ text-align:right; font-variant-numeric:tabular-nums; }
+  .price-table thead th{ color:var(--muted); font-weight:500; font-size:.8rem; text-transform:uppercase; letter-spacing:.08em; }
+  .limit-list{ display:flex; flex-direction:column; gap:.7rem; margin-top:1.4rem; }
+  .limit-list li{ display:flex; justify-content:space-between; font-size:.9rem; padding-bottom:.7rem; border-bottom:1px solid var(--line); }
+  .limit-list li span:last-child{ color:var(--gold-soft); font-variant-numeric:tabular-nums; font-weight:600; }
+  .shop-preview h3{ font-size:1.05rem; margin-bottom:1rem; color:var(--gold-soft); }
+  .shop-preview ul{ display:flex; flex-direction:column; gap:.6rem; }
+  .shop-preview li{ display:flex; justify-content:space-between; font-size:.88rem; color:var(--muted); }
+  .shop-preview li span:last-child{ color:var(--ink); font-variant-numeric:tabular-nums; }
+  @media (max-width:900px){ .price-wrap{ grid-template-columns:1fr; } }
+  .table-scroll{ overflow-x:auto; }
+
+  /* ---------- download ---------- */
+  .download{ padding-block:var(--sp-6); text-align:center; position:relative; }
+  .download::before{
+    content:""; position:absolute; inset:0; z-index:-1;
+    background:radial-gradient(60% 80% at 50% 100%, rgba(201,162,75,.10), transparent 70%);
+  }
+  .download h2{ font-size:clamp(1.8rem,3.4vw,2.6rem); margin-bottom:1rem; }
+  .download p.lede{ color:var(--muted); max-width:520px; margin-inline:auto; }
+  .platform-row{ display:flex; justify-content:center; gap:.8rem; margin:var(--sp-4) 0; flex-wrap:wrap; }
+  .platform-badge{ padding:.5rem 1rem; border:1px solid var(--line); border-radius:2px; font-size:.82rem; color:var(--muted); }
+  .platform-badge.soon{ border-style:dashed; }
+
+  /* ---------- footer ---------- */
+  footer{ border-top:1px solid var(--line); padding-block:var(--sp-5); }
+  .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:var(--sp-4); margin-bottom:var(--sp-4); }
+  .footer-brand p{ color:var(--muted); font-size:.85rem; margin-top:.8rem; max-width:280px; }
+  .footer-col h4{ font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-soft); margin-bottom:1rem; }
+  .footer-col ul{ display:flex; flex-direction:column; gap:.6rem; }
+  .footer-col a{ font-size:.88rem; color:var(--muted); }
+  .footer-col a:hover{ color:var(--ink); }
+  .footer-bottom{ display:flex; justify-content:space-between; align-items:center; padding-top:var(--sp-3); border-top:1px solid var(--line); flex-wrap:wrap; gap:.8rem; }
+  .footer-bottom p{ font-size:.78rem; color:var(--muted); }
+  @media (max-width:860px){ .footer-grid{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:520px){ .footer-grid{ grid-template-columns:1fr; } }
+</style>
+
+<header class="site-header">
+  <div class="header-inner container">
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#top" class="brand">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+        <path d="M15 2 L27 7 V15 C27 21 22 26 15 28 C8 26 3 21 3 15 V7 Z" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+        <path d="M15 2 L15 28" stroke="var(--ink)" stroke-width="1"/>
+        <path d="M15 2 L3 7 V15 C3 21 8 26 15 28 Z" fill="var(--gold)" opacity=".8"/>
+        <path d="M15 2 L27 7 V15 C27 21 22 26 15 28 Z" fill="var(--crimson)" opacity=".8"/>
+      </svg>
+      <span class="brand-text">킹덤즈<em>운명의 굴레</em></span>
+    </a>
+    <nav class="primary-nav" id="primary-nav">
+      <a href="#about">게임소개</a>
+      <a href="#characters">캐릭터</a>
+      <a href="#classes">클래스</a>
+      <a href="#systems">시스템</a>
+      <a href="#items">아이템</a>
+      <a href="#download">다운로드</a>
+    </nav>
+    <a href="#download" class="btn btn-primary btn-small">구매하기</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <canvas id="embers"></canvas>
+  <div class="hero-beam beam-gold" aria-hidden="true"></div>
+  <div class="hero-beam beam-crimson" aria-hidden="true"></div>
+  <div class="hero-inner container">
+    <p class="eyebrow">㈜씨에이치게임즈 · 모바일 액션 RPG</p>
+    <h1 class="hero-title">킹덤즈<br><span>운명의 굴레</span></h1>
+    <p class="hero-kicker">KINGDOMS : CONFINES OF FATE</p>
+    <p class="hero-copy">거센 비가 쏟아지던 밤, 왕비는 쌍둥이를 낳았다.<br>버려진 아이와 남겨진 아이 — 두 왕자의 엇갈린 운명이 시작된다.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#download">구매하기 · 4,000원</a>
+      <a class="btn btn-outline" href="#about">자세히 알아보기</a>
+    </div>
+    <dl class="hero-meta">
+      <div><dt>장르</dt><dd>액션 RPG</dd></div>
+      <div><dt>플랫폼</dt><dd>WIPI-C 모바일</dd></div>
+      <div><dt>서비스</dt><dd>SK · KT · LG U+</dd></div>
+      <div><dt>몬스터</dt><dd>192종 (Lv.1~99)</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="news container reveal" id="news">
+  <div class="section-head">
+    <p class="eyebrow">NEWS</p>
+    <h2>최신 소식 · 업데이트</h2>
+  </div>
+  <div class="news-grid">
+    <article class="news-card frame">
+      <span class="news-tag">사전예약</span>
+      <h3>사전예약 오픈</h3>
+      <p>출시를 기념해 사전예약자 전원에게 8개 거점 마을의 게이트석을 지급합니다.</p>
+    </article>
+    <article class="news-card frame accent-crimson">
+      <span class="news-tag" style="border-color:var(--crimson-soft);color:var(--crimson-soft)">클래스 프리뷰</span>
+      <h3>4개 클래스 스킬트리 최초 공개</h3>
+      <p>나이트 · 워리어 · 아처 · 위자드, 각기 다른 손맛의 스킬트리를 먼저 만나보세요.</p>
+    </article>
+    <article class="news-card frame">
+      <span class="news-tag">시스템</span>
+      <h3>해상 전투 시스템 공개</h3>
+      <p>선체 전투부터 좌초, 선상 전투까지 — 킹덤즈만의 독창적인 3단계 해전을 소개합니다.</p>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">ABOUT</p>
+      <h2>두 갈래로 갈라진, 하나의 운명</h2>
+      <p class="lede">쌍둥이 왕자로 태어난 두 소년의 서로 다른 운명을 그린 액션 RPG.</p>
+    </div>
+    <div class="about-grid">
+      <ul class="about-list reveal">
+        <li><span class="mark">Ⅰ</span><span>쌍둥이 왕자의 엇갈린 운명을 그린 ACTION RPG</span></li>
+        <li><span class="mark">Ⅱ</span><span>나이트 · 워리어 · 아처 · 위자드, 차별화된 4종 직업</span></li>
+        <li><span class="mark">Ⅲ</span><span>콤보 공격 & 폭주 시스템으로 완성한 타격감</span></li>
+        <li><span class="mark">Ⅳ</span><span>메인 퀘스트와 서브 퀘스트로 이어지는 다채로운 여정</span></li>
+        <li><span class="mark">Ⅴ</span><span>랭킹 · 투기장 · 아이템 거래로 즐기는 유저간 경쟁</span></li>
+      </ul>
+      <div class="scroll-panel frame reveal">
+        <h3>SYNOPSIS</h3>
+        <p>거센 비가 쏟아지던 어느 날, 마시마 왕의 왕비는 쌍둥이를 낳는다. 왕국의 신녀 '펠라'는 불길한 징조라 여겨 한 아이를 버리기를 권하고, 나약한 왕은 그 말을 따른다.</p>
+        <p>충직한 신하 '벨퍽스'는 버려질 아이를 몰래 데리고 도주하지만 펠라에게 발각되어 절벽 아래로 떨어지고 만다. 홀로 살아남은 아이는 늑대 무리 속에서 '미하일'이라는 이름의 정예병으로 자라난다.</p>
+        <p>왕국에 남겨진 아이 '카를'은 어엿한 왕자로 성장한다. 서로 쌍둥이였음을 모른 채, 알 수 없는 이끌림으로 형제처럼 지내던 두 사람 — 백성의 반란을 마주하며 미하일은 반란군의 편에 서게 되고, 카를과의 엇갈린 운명이 시작된다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="characters" id="characters">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">CHARACTERS</p>
+      <h2>운명의 두 사람</h2>
+    </div>
+    <div class="char-grid">
+      <article class="char-card michael frame accent-crimson reveal">
+        <div class="glow" aria-hidden="true"></div>
+        <p class="char-role">주인공 · 반란군</p>
+        <h3>미하일</h3>
+        <p>왕자 '카를'과 쌍둥이로 태어났지만 불길한 징조로 여긴 신녀에 의해 버려져 늑대의 품에서 자란다. 세상 물정엔 서툴지만 호기심이 많고, 무예에 능해 마시마 왕국의 정예병이 된다. 순수하고 강직한 성품과 투철한 정의감으로, 훗날 타락한 왕국을 등지고 반란군의 편에 선다.</p>
+      </article>
+      <article class="char-card karle frame reveal">
+        <div class="glow" aria-hidden="true"></div>
+        <p class="char-role">쌍둥이 왕자 · 왕국</p>
+        <h3>카를</h3>
+        <p>미하일과 함께 쌍둥이로 태어나 왕자로 성장한다. 온화한 성격이지만 침착하고 치밀하며, 왕국의 미래를 진심으로 걱정하는 왕자다운 면모를 지녔다. 미하일의 배신과 자신의 출생의 비밀을 알게 되면서 다시는 돌아올 수 없는 강을 건넌다.</p>
+      </article>
+    </div>
+    <div class="npc-row">
+      <div class="npc-card frame reveal">
+        <h4>마시마 왕</h4>
+        <p>온화하지만 무능하고 나태하여 백성들의 반란을 불러온 군주. 신녀 펠라를 절대적으로 신임한다.</p>
+      </div>
+      <div class="npc-card frame reveal">
+        <h4>신녀 펠라</h4>
+        <p>간교하고 교활한 존재로 왕국의 모든 일에 개입하며, 왕을 뒤에서 조종하는 그림자.</p>
+      </div>
+      <div class="npc-card frame reveal">
+        <h4>왕세자 시저</h4>
+        <p>장남이라는 이유만으로 왕위 계승자가 된 이복형. 동생 카를, 그리고 곁을 지키는 미하일을 경계한다.</p>
+      </div>
+      <div class="npc-card frame reveal">
+        <h4>정예병 네차예프</h4>
+        <p>미하일의 파트너이자 숙명의 라이벌. 현실적인 판단으로 왕위 계승자 시저의 편에 서게 된다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="classes" id="classes">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">CLASSES</p>
+      <h2>나에게 맞는 전투 스타일을 고르세요</h2>
+      <p class="lede">4종의 차별화된 직업, 각기 다른 손맛의 스킬트리.</p>
+    </div>
+    <div class="class-grid">
+      <article class="class-card frame reveal">
+        <svg class="class-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M22 4 L36 10 V20 C36 28 30 34 22 38 C14 34 8 28 8 20 V10 Z"/>
+          <path d="M22 4 V38"/>
+        </svg>
+        <h3>나이트</h3>
+        <p class="flavor">검과 방패로 전선을 지키는 근접 방어형 클래스.</p>
+        <ul class="skill-list">
+          <li>파워 스매쉬</li>
+          <li>쉴드 브레이크</li>
+          <li>인챈트 쉴드</li>
+          <li>오버드라이브</li>
+        </ul>
+      </article>
+      <article class="class-card frame reveal">
+        <svg class="class-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M10 34 L30 14"/>
+          <path d="M24 8 L36 20 L30 26 L18 14 Z"/>
+        </svg>
+        <h3>워리어</h3>
+        <p class="flavor">채찍을 휘두르며 강력한 화력을 쏟아내는 근접 공격형 클래스.</p>
+        <ul class="skill-list">
+          <li>데스 스네어</li>
+          <li>세비지 팡</li>
+          <li>라그나로크</li>
+          <li>파이어 휠</li>
+        </ul>
+      </article>
+      <article class="class-card frame reveal">
+        <svg class="class-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M12 6 C12 6 30 10 30 22 C30 34 12 38 12 38"/>
+          <path d="M12 6 L34 22 L12 38"/>
+        </svg>
+        <h3>아처</h3>
+        <p class="flavor">먼 거리에서 화살을 퍼붓는 원거리 공격형 클래스.</p>
+        <ul class="skill-list">
+          <li>더블 샷</li>
+          <li>트리플 애로우</li>
+          <li>샤이닝 애로우</li>
+          <li>토네이도</li>
+        </ul>
+      </article>
+      <article class="class-card frame reveal">
+        <svg class="class-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <circle cx="22" cy="10" r="5"/>
+          <path d="M22 15 V38"/>
+          <path d="M14 30 H30"/>
+        </svg>
+        <h3>위자드</h3>
+        <p class="flavor">속성 마법으로 광역 피해를 입히는 원거리 마법형 클래스.</p>
+        <ul class="skill-list">
+          <li>에너지 서클</li>
+          <li>블레이징 웨이브</li>
+          <li>라이트닝 스톰</li>
+          <li>아토믹 익스플로젠</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="systems" id="systems">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">SYSTEMS</p>
+      <h2>깊이를 더하는 게임 시스템</h2>
+    </div>
+    <div class="system-grid">
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 20 L14 10 M4 24 L18 10 M4 28 L22 10"/></svg>
+        <h3>콤보 · 폭주 시스템</h3>
+        <p>공격키 연타 횟수에 따라 콤보가 이어지며, 누적될수록 공격력 보너스가 붙는다.</p>
+      </article>
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M8 4 H24 V28 L16 24 L8 28 Z"/><path d="M12 10 H20 M12 15 H20"/></svg>
+        <h3>퀘스트 시스템</h3>
+        <p>마을 NPC와의 대화로 부여·완료되는 메인 퀘스트와 서브 퀘스트로 여정이 이어진다.</p>
+      </article>
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 22 Q8 18 14 22 T26 22 T30 22"/><path d="M16 4 V18"/></svg>
+        <h3>해상 전투</h3>
+        <p>선체 전투 → 좌초 → 선상 전투로 이어지는 킹덤즈만의 독창적인 3단계 해전.</p>
+      </article>
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M16 4 V26 M9 12 H23 L20 26 H12 Z"/></svg>
+        <h3>투기장</h3>
+        <p>8개 거점 마을에 마련된 투기장에서 8~14스테이지의 고난이도 사냥과 랭킹 경쟁을 즐긴다.</p>
+      </article>
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 20 L16 6 L26 20 Z"/><path d="M4 26 H28"/></svg>
+        <h3>제작 · 강화</h3>
+        <p>제련, 오브 · 결정 결합, 재연마, 조합으로 나만의 장비를 완성한다.</p>
+      </article>
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="2.3" fill="currentColor" stroke="none"/></svg>
+        <h3>워프게이트</h3>
+        <p>게이트석으로 잠금을 해제하면 8개 거점 마을로 순간이동할 수 있다.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="items" id="items">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">ITEMS</p>
+      <h2>풍부한 아이템 · 몬스터 도감</h2>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-tile frame reveal"><div class="num">60</div><div class="lbl">무기 종류</div></div>
+      <div class="stat-tile frame reveal"><div class="num">56</div><div class="lbl">방어구 종류</div></div>
+      <div class="stat-tile frame reveal"><div class="num">6</div><div class="lbl">세트 아이템</div></div>
+      <div class="stat-tile frame reveal"><div class="num">4</div><div class="lbl">악세서리</div></div>
+      <div class="stat-tile frame reveal"><div class="num">116</div><div class="lbl">잡화 · 소모품</div></div>
+      <div class="stat-tile frame reveal"><div class="num">192</div><div class="lbl">몬스터 (Lv.1~99)</div></div>
+    </div>
+
+    <div class="price-wrap">
+      <div class="reveal">
+        <div class="table-scroll">
+          <table class="price-table">
+            <caption>포인트 결제 안내 · 1 Point = 현금 1원</caption>
+            <thead><tr><th>포인트</th><th>결제 금액</th></tr></thead>
+            <tbody>
+              <tr><td>100 Point</td><td>100원</td></tr>
+              <tr><td>330 Point</td><td>300원</td></tr>
+              <tr><td>550 Point</td><td>500원</td></tr>
+              <tr><td>1,100 Point</td><td>1,000원</td></tr>
+              <tr><td>2,300 Point</td><td>2,000원</td></tr>
+              <tr><td>3,500 Point</td><td>3,000원</td></tr>
+              <tr><td>4,800 Point</td><td>4,000원</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="limit-list">
+          <li><span>SK 월 결제 한도</span><span>100,000원</span></li>
+          <li><span>KT 월 결제 한도</span><span>30,000원</span></li>
+          <li><span>LG U+ 월 결제 한도</span><span>30,000원</span></li>
+        </ul>
+      </div>
+      <div class="shop-preview frame reveal">
+        <h3>브랜드샵 인기 아이템</h3>
+        <ul>
+          <li><span>무기강화주문서 (성공률 90%)</span><span>300P</span></li>
+          <li><span>방어구강화주문서 (성공률 90%)</span><span>300P</span></li>
+          <li><span>소켓생성주문서</span><span>300P</span></li>
+          <li><span>가방 (인벤토리 12칸 확장)</span><span>800P</span></li>
+          <li><span>현자의 돌 (재연마)</span><span>300P</span></li>
+          <li><span>오토루팅</span><span>1,000P</span></li>
+          <li><span>부활석</span><span>100P</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <div class="container reveal">
+    <p class="eyebrow">DOWNLOAD</p>
+    <h2>쌍둥이의 갈라진 운명, 지금 시작하세요</h2>
+    <p class="lede">다운로드 4,000원 · 이후 부분유료 아이템으로 편리하게 즐길 수 있습니다.</p>
+    <div class="platform-row">
+      <span class="platform-badge">SK텔레콤</span>
+      <span class="platform-badge">KT</span>
+      <span class="platform-badge">LG U+</span>
+      <span class="platform-badge soon">Apple App Store · 예정</span>
+      <span class="platform-badge soon">Google Play · 예정</span>
+    </div>
+    <a class="btn btn-primary" href="#top">구매하기 · 4,000원</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <svg width="28" height="28" viewBox="0 0 30 30" aria-hidden="true">
+            <path d="M15 2 L27 7 V15 C27 21 22 26 15 28 C8 26 3 21 3 15 V7 Z" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+            <path d="M15 2 L3 7 V15 C3 21 8 26 15 28 Z" fill="var(--gold)" opacity=".7"/>
+            <path d="M15 2 L27 7 V15 C27 21 22 26 15 28 Z" fill="var(--crimson)" opacity=".7"/>
+          </svg>
+          <span class="brand-text">킹덤즈<em>운명의 굴레</em></span>
+        </div>
+        <p>㈜씨에이치게임즈가 개발한 모바일 액션 RPG. 쌍둥이 왕자의 엇갈린 운명을 그린 이야기가 지금 시작됩니다.</p>
+      </div>
+      <div class="footer-col">
+        <h4>게임</h4>
+        <ul>
+          <li><a href="#about">게임소개</a></li>
+          <li><a href="#characters">캐릭터</a></li>
+          <li><a href="#classes">클래스</a></li>
+          <li><a href="#systems">시스템</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>상점</h4>
+        <ul>
+          <li><a href="#items">아이템 도감</a></li>
+          <li><a href="#download">다운로드</a></li>
+          <li><a href="#items">부분유료 안내</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>고객센터</h4>
+        <ul>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">자주 묻는 질문</a></li>
+          <li><a href="#">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2011 CH Games Co., Ltd. All Rights Reserved.</p>
+      <p>킹덤즈: 운명의 굴레 (Kingdoms : Confines of Fate)</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile nav
+  var toggle = document.getElementById('navToggle');
+  var nav = document.getElementById('primary-nav');
+  toggle.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); });
+  });
+
+  // scroll offset for fixed header
+  document.querySelectorAll('section[id]').forEach(function(s){ s.style.scrollMarginTop = '84px'; });
+
+  // reveal on scroll
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revealEls = document.querySelectorAll('.reveal');
+  if(reduceMotion || !('IntersectionObserver' in window)){
+    revealEls.forEach(function(el){ el.classList.add('in-view'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){ entry.target.classList.add('in-view'); io.unobserve(entry.target); }
+      });
+    }, { threshold:.12, rootMargin:'0px 0px -40px 0px' });
+    revealEls.forEach(function(el){ io.observe(el); });
+  }
+
+  // ember particles in hero
+  (function(){
+    var canvas = document.getElementById('embers');
+    var ctx = canvas.getContext('2d');
+    var hero = canvas.closest('.hero');
+    var particles = [];
+    var COUNT = reduceMotion ? 0 : 46;
+
+    function resize(){
+      canvas.width = hero.clientWidth;
+      canvas.height = hero.clientHeight;
+    }
+    function makeParticle(randomY){
+      var goldSide = Math.random() < 0.5;
+      return {
+        x: Math.random() * canvas.width,
+        y: randomY ? Math.random() * canvas.height : canvas.height + 20,
+        r: Math.random() * 1.6 + .6,
+        speed: Math.random() * .35 + .12,
+        drift: (Math.random() - .5) * .3,
+        alpha: Math.random() * .5 + .2,
+        color: goldSide ? '201,162,75' : '156,59,73'
+      };
+    }
+    function init(){
+      resize();
+      particles = [];
+      for(var i=0;i<COUNT;i++){ particles.push(makeParticle(true)); }
+    }
+    function tick(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      particles.forEach(function(p){
+        p.y -= p.speed; p.x += p.drift;
+        if(p.y < -10){ Object.assign(p, makeParticle(false)); }
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+        ctx.fillStyle = 'rgba(' + p.color + ',' + p.alpha + ')';
+        ctx.fill();
+      });
+      requestAnimationFrame(tick);
+    }
+    init();
+    window.addEventListener('resize', resize);
+    if(COUNT > 0){ requestAnimationFrame(tick); }
+  })();
+</script>

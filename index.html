@@ -1,0 +1,2789 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEED3: 운명의 굴레</title>
+<meta name="description" content="쌍둥이 왕자의 엇갈린 운명을 그린 모바일 액션 RPG 공식 소개 페이지">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner container">
+    <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#top" class="brand">
+      <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+        <path d="M15 2 L27 7 V15 C27 21 22 26 15 28 C8 26 3 21 3 15 V7 Z" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+        <path d="M15 2 L15 28" stroke="var(--ink)" stroke-width="1"/>
+        <path d="M15 2 L3 7 V15 C3 21 8 26 15 28 Z" fill="var(--gold)" opacity=".8"/>
+        <path d="M15 2 L27 7 V15 C27 21 22 26 15 28 Z" fill="var(--crimson)" opacity=".8"/>
+      </svg>
+      <span class="brand-text">SEED3<em>운명의 굴레</em></span>
+    </a>
+    <nav class="primary-nav" id="primary-nav">
+      <a href="#about">게임소개</a>
+      <a href="#characters">캐릭터</a>
+      <a href="#classes">클래스</a>
+      <a href="#systems">시스템</a>
+      <a href="#items">아이템</a>
+      <a href="#download">다운로드</a>
+    </nav>
+    <a href="#download" class="btn btn-primary btn-small">구매하기</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-beam beam-gold" aria-hidden="true"></div>
+  <div class="hero-beam beam-crimson" aria-hidden="true"></div>
+  <div class="hero-art">
+    <img src="images/hero-poster.jpg" alt="던젼앤히어로2 포스터 — 은발의 마법사와 검을 든 금발 청년">
+  </div>
+  <canvas id="embers"></canvas>
+  <div class="hero-inner container">
+    <p class="eyebrow">RE CHGAMES · 모바일 액션 RPG</p>
+    <h1 class="hero-title">SEED3<br><span>운명의 굴레</span></h1>
+    <p class="hero-kicker">SEED3 : CONFINES OF FATE</p>
+    <p class="hero-copy">거센 비가 쏟아지던 밤, 왕비는 쌍둥이를 낳았다.<br>버려진 아이와 남겨진 아이 — 두 왕자의 엇갈린 운명이 시작된다.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#download">구매하기 · $9.99</a>
+      <a class="btn btn-outline" href="#about">자세히 알아보기</a>
+    </div>
+    <dl class="hero-meta">
+      <div><dt>장르</dt><dd>액션 RPG</dd></div>
+      <div><dt>플랫폼</dt><dd>IOS,Android,PC(Stream)</dd></div>
+           <div><dt>몬스터</dt><dd>192종 (Lv.1~99)</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="news container reveal" id="news">
+  <div class="section-head">
+    <p class="eyebrow">NEWS</p>
+    <h2>최신 소식 · 업데이트</h2>
+  </div>
+  <div class="news-grid"> 
+    <article class="news-card frame">
+      <span class="news-tag">리마스터 출시 </span>        
+      <h3>2026년 9월 출시 예정</h3>
+      <p>출시를 기념해 사전예약자 전원에게 8개 거점 마을의 게이트석을 지급합니다.</p>
+    </article>
+    <article class="news-card frame accent-crimson">
+      <span class="news-tag" style="border-color:var(--crimson-soft);color:var(--crimson-soft)">클래스 프리뷰</span>
+      <h3>4개 클래스 스킬트리 최초 공개</h3>
+      <p>나이트 · 워리어 · 아처 · 위자드, 각기 다른 손맛의 스킬트리를 먼저 만나보세요.</p>
+    </article>
+    <article class="news-card frame">
+      <span class="news-tag">시스템</span>
+      <h3>해상 전투 시스템 공개</h3>
+      <p>선체 전투부터 좌초, 선상 전투까지 — 킹덤즈만의 독창적인 3단계 해전을 소개합니다.</p>
+    </article>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">ABOUT</p>
+      <h2>두 갈래로 갈라진, 하나의 운명</h2>
+      <p class="lede">쌍둥이 왕자로 태어난 두 소년의 서로 다른 운명을 그린 액션 RPG.</p>
+    </div> 
+    <div class="about-grid">
+      <ul class="about-list reveal">
+        <li><span class="mark">Ⅰ</span><span>쌍둥이 왕자의 엇갈린 운명을 그린 ACTION RPG</span></li>
+        <li><span class="mark">Ⅱ</span><span>나이트 · 워리어 · 아처 · 위자드, 차별화된 4종 직업</span></li>
+        <li><span class="mark">Ⅲ</span><span>콤보 공격 · 폭주 시스템으로 완성한 타격감</span></li>
+        <li><span class="mark">Ⅳ</span><span>메인 퀘스트와 서브 퀘스트로 이어지는 다채로운 여정</span></li>
+        <li><span class="mark">Ⅴ</span><span>랭킹 · 투기장 · 아이템 거래로 즐기는 유저간 경쟁</span></li>
+      </ul>
+      <div class="scroll-panel frame reveal">
+        <h3>SYNOPSIS</h3>       
+        <p>거센 비가 쏟아지던 어느 날, 마시마 왕의 왕비는 쌍둥이를 낳는다. 왕국의 신녀 '펠라'는 불길한 징조라 여겨 한 아이를 버리기를 권하고, 나약한 왕은 그 말을 따른다.</p>
+        <p>충직한 신하 '벨퍽스'는 버려질 아이를 몰래 데리고 도주하지만 펠라에게 발각되어 절벽 아래로 떨어지고 만다. 홀로 살아남은 아이는 늑대 무리 속에서 '미하일'이라는 이름의 정예병으로 자라난다.</p>
+        <p>서로 쌍둥이였음을 모른 채 왕국에 남겨진 아이 '카를'은 어엿한 왕자로 성장한다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="characters" id="characters">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">CHARACTERS</p>
+      <h2>운명의 두 사람</h2>
+    </div>
+    <div class="char-grid">
+      <article class="char-card michael has-art frame accent-crimson reveal">
+        <div class="art">
+          <img src="images/미하일최종완.jpg" alt="미하일 — 어깨에 앵무새를 얹고 검을 겨눈 모습">
+        </div>
+        <div class="glow" aria-hidden="true"></div>
+        <div class="body">
+          <p class="char-role">주인공 · 반란군</p>
+          <h3>미하일</h3>
+          <p>왕자 '카를'과 쌍둥이로 태어났지만 불길한 징조로 여긴 신녀에 의해 버려져 늑대의 품에서 자란다. 세상 물정엔 서툴지만 호기심이 많고, 무예에 능해 마시마 왕국의 정예병이 된다.</p>
+        </div>
+      </article>
+      <article class="char-card karle has-art frame reveal">
+        <div class="art">
+          <img src="images/카를완.jpg" alt="카를 — 왕자의 위엄을 갖춘 모습">
+        </div>
+        <div class="glow" aria-hidden="true"></div>
+        <div class="body">
+          <p class="char-role">쌍둥이 왕자 · 왕국</p>
+          <h3>카를</h3>
+          <p>미하일과 함께 쌍둥이로 태어나 왕자로 성장한다. 온화한 성격이지만 침착하고 치밀하며, 왕국의 미래를 진심으로 걱정하는 왕자다운 면모를 지녔다. </p>
+        </div>
+      </article>
+    </div>
+    <div class="npc-row">
+      <div class="npc-card has-art frame reveal">
+        <div class="art">
+          <img src="images/마시마왕완.jpg" alt="마시마 왕 — 왕관과 예복을 갖춘 모습">
+        </div>
+        <div class="body">
+          <h4>마시마 왕</h4>
+          <p>온화하지만 무능하고 나태하여 백성들의 반란을 불러온 군주. 신녀 펠라를 절대적으로 신임한다.</p>
+        </div>
+      </div>
+      <div class="npc-card has-art frame reveal">
+        <div class="art">
+          <img src="images/펠라완.jpg" alt="신녀 펠라 — 왕국의 그림자">
+        </div>
+        <div class="body">
+          <h4>신녀 펠라</h4>
+          <p>간교하고 교활한 존재로 왕국의 모든 일에 개입하며, 왕을 뒤에서 조종하는 그림자.</p>
+        </div>
+      </div>
+      <div class="npc-card has-art frame reveal">
+        <div class="art">
+          <img src="images/시져완.jpg" alt="왕세자 시저 — 왕위 계승자">
+        </div>
+        <div class="body">
+          <h4>왕세자 시저</h4>
+          <p>장남이라는 이유만으로 왕위 계승자가 된 이복형. 동생 카를, 그리고 곁을 지키는 미하일을 경계한다.</p>
+        </div>
+      </div>
+      <div class="npc-card has-art frame reveal">
+        <div class="art">
+          <img src="images/네차예프다시완.jpg" alt="정예병 네차예프 — 미하일의 숙명의 라이벌">
+        </div>
+        <div class="body">
+          <h4>정예병 네차예프</h4>
+          <p>미하일의 파트너이자 숙명의 라이벌. 현실적인 판단으로 왕위 계승자 시저의 편에 서게 된다.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="classes" id="classes">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">CLASSES</p>
+      <h2>나에게 맞는 전투 스타일을 고르세요</h2>
+      <p class="lede">4종의 차별화된 직업, 각기 다른 손맛의 스킬트리.</p>
+    </div>
+    <div class="class-grid">
+      <article class="class-card frame reveal">
+        <svg class="class-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M22 4 L36 10 V20 C36 28 30 34 22 38 C14 34 8 28 8 20 V10 Z"/>
+          <path d="M22 4 V38"/>
+        </svg>
+        <h3>나이트</h3>
+        <p class="flavor">검과 방패로 전선을 지키는 근접 방어형 클래스.</p>
+        <ul class="skill-list">
+          <li><strong>파워 스매쉬</strong><span>검 끝에 힘을 모아 전방의 적에게 강력한 일격을 날립니다.</span></li>
+          <li><strong>쉴드 브레이크</strong><span>방패로 강타 후 추가 공격, 일정 확률로 적을 기절시킵니다.</span></li>
+          <li><strong>인챈트 쉴드</strong><span>일정 시간 동안 방패막기 확률을 높여줍니다.</span></li>
+          <li><strong>오버드라이브</strong><span>검기와 번개를 소환해 전방의 적을 무차별 공격합니다.</span></li>
+        </ul>
+      </article>
+      <article class="class-card frame reveal">
+        <svg class="class-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M10 34 L30 14"/>
+          <path d="M24 8 L36 20 L30 26 L18 14 Z"/>
+        </svg>
+        <h3>워리어</h3>
+        <p class="flavor">채찍을 휘두르며 강력한 화력을 쏟아내는 근접 공격형 클래스.</p>
+        <ul class="skill-list">
+          <li><strong>데스 스네어</strong><span>무기를 든 양손을 크게 휘둘러 전방의 적을 공격합니다.</span></li>
+          <li><strong>세비지 팡</strong><span>몸을 회전시켜 전진하며 원심력으로 주변의 적을 공격합니다.</span></li>
+          <li><strong>파이어월</strong><span>두 줄기 불의 장벽을 세워 범위 안의 적에게 지속 피해를 입힙니다.</span></li>
+          <li><strong>라그나로크</strong><span>화염의 폭발을 일으켜 인접한 주변의 적 다수를 공격합니다.</span></li>
+        </ul>
+      </article>
+      <article class="class-card frame reveal">
+        <svg class="class-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <path d="M12 6 C12 6 30 10 30 22 C30 34 12 38 12 38"/>
+          <path d="M12 6 L34 22 L12 38"/>
+        </svg>
+        <h3>아처</h3>
+        <p class="flavor">먼 거리에서 화살을 퍼붓는 원거리 공격형 클래스.</p>
+        <ul class="skill-list">
+          <li><strong>더블 샷</strong><span>빠르고 강력한 두 발의 화살을 연속으로 날립니다.</span></li>
+          <li><strong>트리플 애로우</strong><span>전방의 적을 향해 무차별적인 사격을 퍼붓습니다.</span></li>
+          <li><strong>샤이닝 애로우</strong><span>빛의 화살을 발사, 적중 시 폭발로 주변까지 피해를 입힙니다.</span></li>
+          <li><strong>토네이도</strong><span>거센 바람으로 폭풍을 일으켜 주변의 적 다수를 공격합니다.</span></li>
+        </ul>
+      </article>
+      <article class="class-card frame reveal">
+        <svg class="class-icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+          <circle cx="22" cy="10" r="5"/>
+          <path d="M22 15 V38"/>
+          <path d="M14 30 H30"/>
+        </svg>
+        <h3>위자드</h3>
+        <p class="flavor">속성 마법으로 광역 피해를 입히는 원거리 마법형 클래스.</p>
+        <ul class="skill-list">
+          <li><strong>블레이징 웨이브</strong><span>전방을 향해 뻗어나가는 폭발로 일직선상의 적을 공격합니다.</span></li>
+          <li><strong>에너지 서클</strong><span>적을 향해 돌진하여 피해를 입히는 에너지 구슬을 소환합니다.</span></li>
+          <li><strong>라이트닝 스톰</strong><span>강력한 번개를 소환해 전방의 적 다수에게 피해를 입힙니다.</span></li>
+          <li><strong>아토믹 익스플로젠</strong><span>화면 전체에 거대한 폭발을 일으켜 범위 안의 적 모두를 공격합니다.</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="systems" id="systems">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">SYSTEMS</p>
+      <h2>깊이를 더하는 게임 시스템</h2>
+    </div>
+    <div class="system-grid">
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 20 L14 10 M4 24 L18 10 M4 28 L22 10"/></svg>
+        <h3>콤보 · 폭주 시스템</h3>
+        <p>공격키 연타 횟수에 따라 콤보가 이어지며, 누적될수록 공격력 보너스가 붙는다.</p>
+      </article>
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M8 4 H24 V28 L16 24 L8 28 Z"/><path d="M12 10 H20 M12 15 H20"/></svg>
+        <h3>퀘스트 시스템</h3>
+        <p>마을 NPC와의 대화로 부여·완료되는 메인 퀘스트와 서브 퀘스트로 여정이 이어진다.</p>
+      </article>
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M2 22 Q8 18 14 22 T26 22 T30 22"/><path d="M16 4 V18"/></svg>
+        <h3>해상 전투</h3>
+        <p>선체 전투 → 좌초 → 선상 전투로 이어지는 킹덤즈만의 독창적인 3단계 해전.</p>
+      </article>
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M16 4 V26 M9 12 H23 L20 26 H12 Z"/></svg>
+        <h3>투기장</h3>
+        <p>8개 거점 마을에 마련된 투기장에서 8~14스테이지의 고난이도 사냥과 랭킹 경쟁을 즐긴다.</p>
+      </article>
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M6 20 L16 6 L26 20 Z"/><path d="M4 26 H28"/></svg>
+        <h3>제작 · 강화</h3>
+        <p>제련, 오브 · 결정 결합, 재연마, 조합으로 나만의 장비를 완성한다.</p>
+      </article>
+      <article class="system-card reveal">
+        <svg class="icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="16" cy="16" r="11"/><circle cx="16" cy="16" r="2.3" fill="currentColor" stroke="none"/></svg>
+        <h3>워프게이트</h3>
+        <p>게이트석으로 잠금을 해제하면 8개 거점 마을로 순간이동할 수 있다.</p>
+      </article>
+    </div>
+
+    <div class="growth-block reveal">
+      <div class="growth-media frame">
+        <img src="images/image212.jpeg" alt="캐릭터 스테이터스 화면 — 공격·체력·민첩·집중 능력치 배분">
+      </div>
+      <div class="growth-info">
+        <h3>캐릭터 육성</h3>
+        <p>레벨 상승 시 보너스 능력치 포인트 4점을 획득하며, 이 포인트를 네 가지 능력치에 자유롭게 투자해 자신만의 캐릭터로 육성할 수 있습니다.</p>
+        <ul class="growth-stats">
+          <li><strong>공격</strong><span>공격력 증가, 최대 TP량 증가</span></li>
+          <li><strong>체력</strong><span>방어력 증가, 최대 HP량 증가, HP 자연 회복량 증가</span></li>
+          <li><strong>민첩</strong><span>공격 성공률 증가, 회피율 증가, 크리티컬 확률 증가</span></li>
+          <li><strong>집중</strong><span>스킬 공격력 증가, 스킬 쿨타임 단축, 최대 SP량 증가, SP 자연 회복량 증가</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="usage-block reveal">
+      <div class="usage-info">
+        <h3>아이템 사용</h3>
+        <p>소모성 아이템은 퀵슬롯에 등록하여 간편하고 빠르게 사용할 수 있습니다. 6칸으로 구성된 퀵슬롯을 A·B 2세트로 세팅할 수 있어 최대 12칸을 동시에 활용합니다.</p>
+        <ol class="usage-steps">
+          <li>등록할 소모성 아이템을 선택하고 <strong>Quick Slot</strong> 버튼을 터치합니다.</li>
+          <li>원하는 퀵슬롯 위치에 터치하면 아이템이 등록됩니다.</li>
+        </ol>
+      </div>
+      <div class="usage-media">
+        <div class="usage-shot frame">
+          <img src="images/image213.jpeg" alt="인벤토리에서 소형 HP포션을 선택한 상세 정보 화면">
+        </div>
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="usage-shot frame">
+          <img src="images/image214.jpeg" alt="A·B 두 세트, 6칸씩 구성된 퀵슬롯 등록 화면">
+        </div>
+      </div>
+    </div>
+
+    <div class="usage-block reveal">
+      <div class="usage-info">
+        <h3>스킬 사용</h3>
+        <p>스킬도 소모성 아이템과 같이 퀵슬롯에 등록하여 간편하고 빠르게 사용할 수 있습니다. 6칸으로 구성된 퀵슬롯을 A·B 2세트로 세팅할 수 있어 최대 12칸을 동시에 활용합니다.</p>
+        <ol class="usage-steps">
+          <li>등록할 스킬을 선택하고 <strong>Quick Slot</strong> 버튼을 터치합니다.</li>
+          <li>원하는 퀵슬롯 위치에 터치하면 스킬이 등록됩니다.</li>
+        </ol>
+      </div>
+      <div class="usage-media">
+        <div class="usage-shot frame">
+          <img src="images/image215.jpeg" alt="스킬 화면 - 파워 스매쉬 상세 정보(소모 SP 20)와 Quick Slot·Allocation 버튼">
+        </div>
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="usage-shot frame">
+          <img src="images/image216.jpeg" alt="A·B 두 세트, 6칸씩 구성된 스킬 퀵슬롯 등록 화면">
+        </div>
+      </div>
+    </div>
+
+    <div class="usage-block reveal">
+      <div class="usage-info">
+        <h3>월드맵</h3>
+        <p>월드 맵 화면은 게임 내 등장하는 모든 지역을 묶음 단위로 간략하게 표시하며, 현재 캐릭터의 위치와 퀘스트 목적지, 지역 명칭을 확인할 수 있습니다.</p>
+        <ol class="usage-steps">
+          <li>월드 맵에서 하나의 지역을 선택하면 <strong>에어리어 맵</strong>으로 전환됩니다.</li>
+          <li>에어리어 맵에서는 이동 가능한 필드와 캐릭터 현재 위치, 퀘스트 목적지를 상세히 확인할 수 있습니다.</li>
+        </ol>
+      </div>
+      <div class="usage-media">
+        <div class="usage-shot frame">
+          <img src="images/image217.jpeg" alt="월드 맵 화면 - 마시마 마을, 퀘스트 목적지로 이어지는 경로 표시">
+        </div>
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="usage-shot frame">
+          <img src="images/image218.jpeg" alt="에어리어 맵 화면 - 광장, 이동 가능한 필드와 캐릭터 위치 표시">
+        </div>
+      </div>
+    </div>
+
+    <div class="forge-block reveal">
+      <div class="usage-info">
+        <h3>제련</h3>
+        <p>장비 아이템과 무기강화주문서 또는 방어구강화주문서로 장비 고유의 성능(공격력·방어력)을 향상시킬 수 있습니다. 무기는 9단계, 방어구는 5단계까지 제련이 가능합니다.</p>
+        <ol class="usage-steps">
+          <li>제련에는 성공·실패 확률이 있으며, 실패해도 장비는 소멸하지 않지만 낮은 확률로 성능이 하락할 수 있습니다.</li>
+         
+        </ol>
+      </div>
+      <div class="forge-steps">
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image225.jpeg" alt="대장장이 NPC를 통해 장비 제련 메뉴 진입"></div>
+          <span class="forge-step-label">1 · 대장장이 진입</span>
+        </div>
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image226.jpeg" alt="제련할 장비와 강화주문서를 선택한 화면"></div>
+          <span class="forge-step-label">2 · 장비 · 주문서 선택</span>
+        </div>
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image227.jpeg" alt="장비 제련 진행 화면"></div>
+          <span class="forge-step-label">3 · 제련 진행</span>
+        </div>
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image228.jpeg" alt="1단계 제련된 장비 상세 정보"></div>
+          <span class="forge-step-label">4 · 제련 완료</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="forge-block reveal">
+      <div class="usage-info">
+        <h3>투기장</h3>
+        <p>16곳의 마을 중 주요 거점 8곳에 투기장이 있습니다. 각 투기장은 8~14 스테이지로 구성되며, 중간 아이템 보급과 클리어 보상이 지급됩니다.</p>
+        <ol class="usage-steps">
+          
+        </ol>
+      </div>
+      <div class="forge-steps">
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image249.jpeg" alt="마을에 배치된 투기장 관리인을 통해 입장"></div>
+          <span class="forge-step-label">1 · 관리인에게 입장</span>
+        </div>
+        
+       
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image251.jpeg" alt="투기장 스테이지 진행 화면"></div>
+          <span class="forge-step-label">2 · 스테이지 진행</span>
+        </div>
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image252.jpeg" alt="투기장 클리어 결과 - 스코어와 보상"></div>
+          <span class="forge-step-label">3 · 클리어 보상</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="forge-block reveal">
+      <div class="usage-info">
+        <h3>해상 전투</h3>
+        <p>SEED3만의 독창적인 해상 전투 시스템입니다. 해상전을 치르기 위해서는 바다 지형으로 이동할 수 있는 전용 탈 것이 필요합니다.</p>
+        <ol class="usage-steps">
+          <li>해상에서 조우한 적의 배를 공격해 <strong>좌초</strong>시킵니다.</li>
+          <li>좌초된 배에 올라타 선상에 있는 적들을 물리치면 전투가 끝납니다.</li>
+        </ol>
+      </div>
+      <div class="forge-steps">
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image277.jpeg" alt="해상에서 적 선박과 전투하는 화면"></div>
+          <span class="forge-step-label">1 · 선박 전투</span>
+        </div>
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image278.jpeg" alt="적 선박의 HP가 0이 되어 좌초하는 화면"></div>
+          <span class="forge-step-label">2 · 좌초</span>
+        </div>
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image279.jpeg" alt="좌초된 배에 올라타 선상에서 전투하는 화면"></div>
+          <span class="forge-step-label">3 · 선상 전투</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="forge-block reveal">
+      <div class="usage-info">
+        <h3>워프게이트</h3>
+        <p>16곳의 마을 중 주요 거점 8곳에 워프게이트가 마련되어 있어, 워프게이트가 있는 다른 마을로 빠르게 이동할 수 있습니다.</p>
+      </div>
+      <div class="forge-steps">
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image253.jpeg" alt="마을에 배치된 워프게이트"></div>
+          <span class="forge-step-label">1 · 워프게이트 방문</span>
+        </div>
+        
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image255.jpeg" alt="이동할 마을을 선택하는 워프게이트 목록"></div>
+          <span class="forge-step-label">2 · 마을 선택</span>
+        </div>
+        <span class="usage-arrow" aria-hidden="true">→</span>
+        <div class="forge-step">
+          <div class="usage-shot frame"><img src="images/image256.jpeg" alt="워프게이트를 통해 마시마 마을로 이동한 화면"></div>
+          <span class="forge-step-label">3 · 이동 완료</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="items" id="items">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">ITEMS</p>
+      <h2>풍부한 아이템 및 몬스터 </h2>
+    </div>
+    <div class="stat-grid">
+      <div class="stat-tile frame reveal"><div class="num">60</div><div class="lbl">무기 종류</div></div>
+      <div class="stat-tile frame reveal"><div class="num">56</div><div class="lbl">방어구 종류</div></div>
+      <div class="stat-tile frame reveal"><div class="num">6</div><div class="lbl">세트 아이템</div></div>
+      <div class="stat-tile frame reveal"><div class="num">4</div><div class="lbl">악세서리</div></div>
+      <div class="stat-tile frame reveal"><div class="num">122</div><div class="lbl">잡화 · 소모품</div></div>
+      
+    </div>
+
+    <div class="item-cat-block reveal">
+      <h3>무기 타입 · 4종</h3>
+      <div class="item-cat-grid">
+        <div class="item-cat frame">
+          <svg class="icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M22 4 L34 9 V19 C34 27 29 33 22 37 C15 33 10 27 10 19 V9 Z"/>
+            <path d="M14 30 L30 12"/>
+          </svg>
+          <h4>검 + 방패</h4>
+          <p>휘둘러 타격하는 근접 무기. 방패를 함께 들어 가드 확률이 붙습니다.</p>
+          <span class="range">사브르 ~ 오블리비언 · Lv.1~84</span>
+        </div>
+        <div class="item-cat frame">
+          <svg class="icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <circle cx="22" cy="22" r="13"/>
+            <circle cx="22" cy="22" r="6"/>
+          </svg>
+          <h4>차크람</h4>
+          <p>사슬 끝에 부메랑을 매달아 휘두르는 무기. 검보다 공격 범위가 넓습니다.</p>
+          <span class="range">비히모스 차크람 ~ 호러 오브 데스 · Lv.1~84</span>
+        </div>
+        <div class="item-cat frame">
+          <svg class="icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M14 8 C14 8 30 12 30 22 C30 32 14 36 14 36"/>
+            <path d="M14 8 L30 22 L14 36"/>
+          </svg>
+          <h4>활</h4>
+          <p>원거리에서 화살을 발사하는 무기. 가느다란 빛줄기가 날아가는 형태로 표현됩니다.</p>
+          <span class="range">숏보우 ~ 호크 아이 · Lv.1~84</span>
+        </div>
+        <div class="item-cat frame">
+          <svg class="icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <circle cx="22" cy="9" r="5"/>
+            <path d="M22 14 V38"/>
+          </svg>
+          <h4>지팡이</h4>
+          <p>직접 타격 대신 마법을 사용하기 위해 소지하는 촉매입니다.</p>
+          <span class="range">위자드 로드 ~ 아마겟돈 · Lv.1~84</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-cat-block reveal">
+      <h3>방어구 부위 · 4종</h3>
+      <div class="item-cat-grid">
+        <div class="item-cat frame">
+          <svg class="icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M12 24 C12 12 16 6 22 6 C28 6 32 12 32 24"/>
+            <path d="M10 24 H34 V28 H10 Z"/>
+          </svg>
+          <h4>머리</h4>
+          <p>두건부터 크라운까지, 방어력과 함께 레어도별 옵션이 붙는 부위입니다.</p>
+          <span class="range">두건 ~ 페이스 오프 · 14종 · Lv.3~84</span>
+        </div>
+        <div class="item-cat frame">
+          <svg class="icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M14 12 L22 8 L30 12 L30 34 L14 34 Z"/>
+            <path d="M22 8 V16"/>
+          </svg>
+          <h4>몸</h4>
+          <p>로브부터 플레이트 메일까지, 방어구 중 가장 높은 방어력을 담당합니다.</p>
+          <span class="range">실크 로브 ~ 샤이닝 디펜서 · 14종 · Lv.1~82</span>
+        </div>
+        <div class="item-cat frame">
+          <svg class="icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M16 30 V16 C16 11 19 8 22 8 C25 8 28 11 28 16 V30"/>
+            <path d="M16 30 H28 V36 H16 Z"/>
+          </svg>
+          <h4>팔</h4>
+          <p>글로브와 건틀렛류. 오브 · 결정 소켓을 담기 좋은 보조 방어 부위입니다.</p>
+          <span class="range">글로브 ~ 블러디 로어 · 14종 · Lv.4~85</span>
+        </div>
+        <div class="item-cat frame">
+          <svg class="icon" viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+            <path d="M16 6 V26 L12 36 H24 V26 H28 V6 Z"/>
+          </svg>
+          <h4>다리</h4>
+          <p>부츠와 그리브류. 이동과 회피에 관련된 옵션이 자주 붙는 부위입니다.</p>
+          <span class="range">부츠 ~ 슬레이프닐 · 14종 · Lv.2~83</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-cat-block reveal">
+      <h3>전체 아이템 도감</h3>
+      <div class="dex-tabs" role="tablist">
+        <button class="dex-tab-btn active" data-dex-tab="weapon" role="tab" aria-selected="true">무기 · 60종</button>
+        <button class="dex-tab-btn" data-dex-tab="armor" role="tab" aria-selected="false">방어구 · 56종</button>
+        <button class="dex-tab-btn" data-dex-tab="accessory" role="tab" aria-selected="false">액세서리 · 4종</button>
+        <button class="dex-tab-btn" data-dex-tab="set" role="tab" aria-selected="false">세트 · 24종</button>
+        <button class="dex-tab-btn" data-dex-tab="misc" role="tab" aria-selected="false">잡화 · 122종</button>
+      </div>
+      <div class="dex-panel active" data-dex-panel="weapon">
+        <div class="dex-group">
+          <h4>검 + 방패 · 15종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/001_사브르.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">사브르</span>
+              <span class="dex-stat">11 ~ 16</span>
+              <span class="dex-stat">Lv.1</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/002_플루트_소드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">플루트 소드</span>
+              <span class="dex-stat">23 ~ 35</span>
+              <span class="dex-stat">Lv.6</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/003_쇼텔.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">쇼텔</span>
+              <span class="dex-stat">34 ~ 52</span>
+              <span class="dex-stat">Lv.12</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/004_시미터.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">시미터</span>
+              <span class="dex-stat">45 ~ 70</span>
+              <span class="dex-stat">Lv.18</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/005_카타나.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">카타나</span>
+              <span class="dex-stat">56 ~ 86</span>
+              <span class="dex-stat">Lv.24</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/006_레이피어.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레이피어</span>
+              <span class="dex-stat">68 ~ 104</span>
+              <span class="dex-stat">Lv.30</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/007_커틀러스.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">커틀러스</span>
+              <span class="dex-stat">79 ~ 121</span>
+              <span class="dex-stat">Lv.36</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/008_글라디우스.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">글라디우스</span>
+              <span class="dex-stat">90 ~ 139</span>
+              <span class="dex-stat">Lv.42</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/009_클레이모어.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">클레이모어</span>
+              <span class="dex-stat">101 ~ 156</span>
+              <span class="dex-stat">Lv.48</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/010_브로드_소드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">브로드 소드</span>
+              <span class="dex-stat">113 ~ 174</span>
+              <span class="dex-stat">Lv.54</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/011_오딧세이_블레이드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">오딧세이 블레이드</span>
+              <span class="dex-stat">124 ~ 191</span>
+              <span class="dex-stat">Lv.60</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/012_템플러_소드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">템플러 소드</span>
+              <span class="dex-stat">136 ~ 209</span>
+              <span class="dex-stat">Lv.66</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/013_스컬릭엣지.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">스컬릭엣지</span>
+              <span class="dex-stat">147 ~ 226</span>
+              <span class="dex-stat">Lv.72</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/014_엑스칼리버.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">엑스칼리버</span>
+              <span class="dex-stat">158 ~ 244</span>
+              <span class="dex-stat">Lv.78</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/015_오블리비언.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">오블리비언</span>
+              <span class="dex-stat">169 ~ 260</span>
+              <span class="dex-stat">Lv.84</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>차크람 · 15종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/016_비히모스_차크람.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">비히모스 차크람</span>
+              <span class="dex-stat">9 ~ 19</span>
+              <span class="dex-stat">Lv.1</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/017_하이랜더.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">하이랜더</span>
+              <span class="dex-stat">18 ~ 37</span>
+              <span class="dex-stat">Lv.6</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/018_스켈레톤_레이지.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">스켈레톤 레이지</span>
+              <span class="dex-stat">28 ~ 56</span>
+              <span class="dex-stat">Lv.12</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/019_헬리오스.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">헬리오스</span>
+              <span class="dex-stat">37 ~ 74</span>
+              <span class="dex-stat">Lv.18</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/020_데몬_차크람.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">데몬 차크람</span>
+              <span class="dex-stat">46 ~ 93</span>
+              <span class="dex-stat">Lv.24</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/021_데인저_드롭.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">데인저 드롭</span>
+              <span class="dex-stat">55 ~ 112</span>
+              <span class="dex-stat">Lv.30</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/022_코로나.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">코로나</span>
+              <span class="dex-stat">65 ~ 130</span>
+              <span class="dex-stat">Lv.36</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/023_아이언_하울.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">아이언 하울</span>
+              <span class="dex-stat">74 ~ 149</span>
+              <span class="dex-stat">Lv.42</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/024_크로우_번.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">크로우 번</span>
+              <span class="dex-stat">83 ~ 168</span>
+              <span class="dex-stat">Lv.48</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/025_서펜트_트루퍼즈.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">서펜트 트루퍼즈</span>
+              <span class="dex-stat">92 ~ 186</span>
+              <span class="dex-stat">Lv.54</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/026_헬파이어.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">헬파이어</span>
+              <span class="dex-stat">102 ~ 205</span>
+              <span class="dex-stat">Lv.60</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/027_플레임_웨이브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">플레임 웨이브</span>
+              <span class="dex-stat">111 ~ 223</span>
+              <span class="dex-stat">Lv.66</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/028_브로큰_레이지.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">브로큰 레이지</span>
+              <span class="dex-stat">120 ~ 242</span>
+              <span class="dex-stat">Lv.72</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/029_다이나믹_블로우.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">다이나믹 블로우</span>
+              <span class="dex-stat">129 ~ 261</span>
+              <span class="dex-stat">Lv.78</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/030_호러_오브_데스.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">호러 오브 데스</span>
+              <span class="dex-stat">139 ~ 279</span>
+              <span class="dex-stat">Lv.84</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>활 · 15종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/031_숏보우.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">숏보우</span>
+              <span class="dex-stat">12 ~ 18</span>
+              <span class="dex-stat">Lv.1</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/032_롱보우.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">롱보우</span>
+              <span class="dex-stat">25 ~ 36</span>
+              <span class="dex-stat">Lv.6</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/033_콤포지트_보우.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">콤포지트 보우</span>
+              <span class="dex-stat">38 ~ 54</span>
+              <span class="dex-stat">Lv.12</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/034_크로스_보우.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">크로스 보우</span>
+              <span class="dex-stat">51 ~ 73</span>
+              <span class="dex-stat">Lv.18</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/035_스트레이트_보우.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">스트레이트 보우</span>
+              <span class="dex-stat">63 ~ 90</span>
+              <span class="dex-stat">Lv.24</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/036_슈팅_라이트.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">슈팅 라이트</span>
+              <span class="dex-stat">76 ~ 109</span>
+              <span class="dex-stat">Lv.30</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/037_배틀_보우.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">배틀 보우</span>
+              <span class="dex-stat">89 ~ 126</span>
+              <span class="dex-stat">Lv.36</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/038_자벨린_보우.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">자벨린 보우</span>
+              <span class="dex-stat">102 ~ 145</span>
+              <span class="dex-stat">Lv.42</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/039_리커브_보우.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">리커브 보우</span>
+              <span class="dex-stat">114 ~ 163</span>
+              <span class="dex-stat">Lv.48</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/040_윈드_포스.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">윈드 포스</span>
+              <span class="dex-stat">127 ~ 181</span>
+              <span class="dex-stat">Lv.54</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/041_발키리.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">발키리</span>
+              <span class="dex-stat">139 ~ 199</span>
+              <span class="dex-stat">Lv.60</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/042_프리시전_보우.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">프리시전 보우</span>
+              <span class="dex-stat">152 ~ 218</span>
+              <span class="dex-stat">Lv.66</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/043_세인트_이글.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">세인트 이글</span>
+              <span class="dex-stat">165 ~ 235</span>
+              <span class="dex-stat">Lv.72</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/044_블랙버드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">블랙버드</span>
+              <span class="dex-stat">180 ~ 256</span>
+              <span class="dex-stat">Lv.78</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/045_호크_아이.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">호크 아이</span>
+              <span class="dex-stat">190 ~ 271</span>
+              <span class="dex-stat">Lv.84</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>지팡이 · 15종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/046_위자드_로드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">위자드 로드</span>
+              <span class="dex-stat">13 ~ 17</span>
+              <span class="dex-stat">Lv.1</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/047_크리스탈_로드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">크리스탈 로드</span>
+              <span class="dex-stat">26 ~ 34</span>
+              <span class="dex-stat">Lv.6</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/048_데스_스태프.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">데스 스태프</span>
+              <span class="dex-stat">39 ~ 51</span>
+              <span class="dex-stat">Lv.12</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/049_디스토션_스태프.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">디스토션 스태프</span>
+              <span class="dex-stat">52 ~ 68</span>
+              <span class="dex-stat">Lv.18</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/050_레이븐_로드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레이븐 로드</span>
+              <span class="dex-stat">65 ~ 85</span>
+              <span class="dex-stat">Lv.24</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/051_폴라리스.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">폴라리스</span>
+              <span class="dex-stat">77 ~ 102</span>
+              <span class="dex-stat">Lv.30</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/052_아케인_스태프.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">아케인 스태프</span>
+              <span class="dex-stat">90 ~ 119</span>
+              <span class="dex-stat">Lv.36</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/053_페이트_소울.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">페이트 소울</span>
+              <span class="dex-stat">103 ~ 136</span>
+              <span class="dex-stat">Lv.42</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/054_일루젼.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">일루젼</span>
+              <span class="dex-stat">116 ~ 153</span>
+              <span class="dex-stat">Lv.48</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/055_아이리스.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">아이리스</span>
+              <span class="dex-stat">129 ~ 170</span>
+              <span class="dex-stat">Lv.54</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/056_어스_호라이즌.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">어스 호라이즌</span>
+              <span class="dex-stat">142 ~ 186</span>
+              <span class="dex-stat">Lv.60</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/057_포어_사이트.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">포어 사이트</span>
+              <span class="dex-stat">155 ~ 203</span>
+              <span class="dex-stat">Lv.66</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/058_디아볼릭_로드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">디아볼릭 로드</span>
+              <span class="dex-stat">168 ~ 220</span>
+              <span class="dex-stat">Lv.72</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/059_인터루드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">인터루드</span>
+              <span class="dex-stat">181 ~ 237</span>
+              <span class="dex-stat">Lv.78</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/무기/060_아마겟돈.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">아마겟돈</span>
+              <span class="dex-stat">194 ~ 254</span>
+              <span class="dex-stat">Lv.84</span>
+            </span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="dex-panel" data-dex-panel="armor">
+        <div class="dex-group">
+          <h4>머리 · 14종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/001_두건.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">두건</span>
+              <span class="dex-stat">방어 4</span>
+              <span class="dex-stat">Lv.3</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/002_밴드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">밴드</span>
+              <span class="dex-stat">방어 8</span>
+              <span class="dex-stat">Lv.10</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/003_헤드기어.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">헤드기어</span>
+              <span class="dex-stat">방어 12</span>
+              <span class="dex-stat">Lv.17</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/004_버것넷.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">버것넷</span>
+              <span class="dex-stat">방어 15</span>
+              <span class="dex-stat">Lv.24</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/005_서클릿.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">서클릿</span>
+              <span class="dex-stat">방어 19</span>
+              <span class="dex-stat">Lv.30</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/006_사피로스_캡.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">사피로스 캡</span>
+              <span class="dex-stat">방어 23</span>
+              <span class="dex-stat">Lv.36</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/007_풀_헬름.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">풀 헬름</span>
+              <span class="dex-stat">방어 27</span>
+              <span class="dex-stat">Lv.42</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/008_미스릴_헬름.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">미스릴 헬름</span>
+              <span class="dex-stat">방어 31</span>
+              <span class="dex-stat">Lv.48</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/009_어비스_크라운.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">어비스 크라운</span>
+              <span class="dex-stat">방어 34</span>
+              <span class="dex-stat">Lv.54</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/010_엘리멘탈_크라운.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">엘리멘탈 크라운</span>
+              <span class="dex-stat">방어 38</span>
+              <span class="dex-stat">Lv.60</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/011_에텔_티아라.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">에텔 티아라</span>
+              <span class="dex-stat">방어 42</span>
+              <span class="dex-stat">Lv.66</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/012_가디언_티아라.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">가디언 티아라</span>
+              <span class="dex-stat">방어 46</span>
+              <span class="dex-stat">Lv.72</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/013_엠프레스_코로넷.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">엠프레스 코로넷</span>
+              <span class="dex-stat">방어 50</span>
+              <span class="dex-stat">Lv.78</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/014_페이스_오프.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">페이스 오프</span>
+              <span class="dex-stat">방어 54</span>
+              <span class="dex-stat">Lv.84</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>몸 · 14종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/015_실크_로브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">실크 로브</span>
+              <span class="dex-stat">방어 5</span>
+              <span class="dex-stat">Lv.1</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/016_튜닛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">튜닛</span>
+              <span class="dex-stat">방어 9</span>
+              <span class="dex-stat">Lv.8</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/017_래더_아머.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">래더 아머</span>
+              <span class="dex-stat">방어 14</span>
+              <span class="dex-stat">Lv.15</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/018_스케일_아머.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">스케일 아머</span>
+              <span class="dex-stat">방어 18</span>
+              <span class="dex-stat">Lv.22</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/019_링_메일.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">링 메일</span>
+              <span class="dex-stat">방어 23</span>
+              <span class="dex-stat">Lv.28</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/020_블래스트_아머.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">블래스트 아머</span>
+              <span class="dex-stat">방어 28</span>
+              <span class="dex-stat">Lv.34</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/021_티어즈_아머.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">티어즈 아머</span>
+              <span class="dex-stat">방어 32</span>
+              <span class="dex-stat">Lv.40</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/022_고딕_플레이트.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">고딕 플레이트</span>
+              <span class="dex-stat">방어 37</span>
+              <span class="dex-stat">Lv.46</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/023_풀_플레이트_메일.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">풀 플레이트 메일</span>
+              <span class="dex-stat">방어 42</span>
+              <span class="dex-stat">Lv.52</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/024_자이언트_메일.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">자이언트 메일</span>
+              <span class="dex-stat">방어 46</span>
+              <span class="dex-stat">Lv.58</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/025_프로텍트_아머.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">프로텍트 아머</span>
+              <span class="dex-stat">방어 51</span>
+              <span class="dex-stat">Lv.64</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/026_오딘_플레이트.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">오딘 플레이트</span>
+              <span class="dex-stat">방어 56</span>
+              <span class="dex-stat">Lv.70</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/027_저거너트.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">저거너트</span>
+              <span class="dex-stat">방어 61</span>
+              <span class="dex-stat">Lv.76</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/028_샤이닝_디펜서.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">샤이닝 디펜서</span>
+              <span class="dex-stat">방어 66</span>
+              <span class="dex-stat">Lv.82</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>팔 · 14종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/029_글로브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">글로브</span>
+              <span class="dex-stat">방어 3</span>
+              <span class="dex-stat">Lv.4</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/030_건틀렛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">건틀렛</span>
+              <span class="dex-stat">방어 6</span>
+              <span class="dex-stat">Lv.11</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/031_타이푼_암.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">타이푼 암</span>
+              <span class="dex-stat">방어 10</span>
+              <span class="dex-stat">Lv.18</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/032_어쌔신_글러브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">어쌔신 글러브</span>
+              <span class="dex-stat">방어 13</span>
+              <span class="dex-stat">Lv.25</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/033_크리쳐_가더.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">크리쳐 가더</span>
+              <span class="dex-stat">방어 16</span>
+              <span class="dex-stat">Lv.31</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/034_플레어_글러브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">플레어 글러브</span>
+              <span class="dex-stat">방어 19</span>
+              <span class="dex-stat">Lv.37</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/035_엔틱_건틀렛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">엔틱 건틀렛</span>
+              <span class="dex-stat">방어 22</span>
+              <span class="dex-stat">Lv.43</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/036_레기온_건틀렛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레기온 건틀렛</span>
+              <span class="dex-stat">방어 26</span>
+              <span class="dex-stat">Lv.49</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/037_노블_건틀렛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">노블 건틀렛</span>
+              <span class="dex-stat">방어 29</span>
+              <span class="dex-stat">Lv.55</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/038_비스트_가더.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">비스트 가더</span>
+              <span class="dex-stat">방어 32</span>
+              <span class="dex-stat">Lv.61</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/039_그레이스건틀렛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">그레이스건틀렛</span>
+              <span class="dex-stat">방어 35</span>
+              <span class="dex-stat">Lv.67</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/040_코튼_글러브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">코튼 글러브</span>
+              <span class="dex-stat">방어 38</span>
+              <span class="dex-stat">Lv.73</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/041_세비지_건틀렛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">세비지 건틀렛</span>
+              <span class="dex-stat">방어 41</span>
+              <span class="dex-stat">Lv.79</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/042_블러디_로어.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">블러디 로어</span>
+              <span class="dex-stat">방어 45</span>
+              <span class="dex-stat">Lv.85</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>다리 · 14종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/043_부츠.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">부츠</span>
+              <span class="dex-stat">방어 4</span>
+              <span class="dex-stat">Lv.2</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/044_스웨드_부츠.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">스웨드 부츠</span>
+              <span class="dex-stat">방어 7</span>
+              <span class="dex-stat">Lv.9</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/045_브론즈_레깅스.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">브론즈 레깅스</span>
+              <span class="dex-stat">방어 10</span>
+              <span class="dex-stat">Lv.16</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/046_아이언_레깅스.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">아이언 레깅스</span>
+              <span class="dex-stat">방어 14</span>
+              <span class="dex-stat">Lv.23</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/047_사바톤.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">사바톤</span>
+              <span class="dex-stat">방어 18</span>
+              <span class="dex-stat">Lv.29</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/048_버닝_사바톤.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">버닝 사바톤</span>
+              <span class="dex-stat">방어 22</span>
+              <span class="dex-stat">Lv.35</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/049_블링크_슈즈.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">블링크 슈즈</span>
+              <span class="dex-stat">방어 25</span>
+              <span class="dex-stat">Lv.41</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/050_엘븐_슈즈.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">엘븐 슈즈</span>
+              <span class="dex-stat">방어 29</span>
+              <span class="dex-stat">Lv.47</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/051_메탈_그리브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">메탈 그리브</span>
+              <span class="dex-stat">방어 32</span>
+              <span class="dex-stat">Lv.53</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/052_둠_그리브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">둠 그리브</span>
+              <span class="dex-stat">방어 36</span>
+              <span class="dex-stat">Lv.59</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/053_어비스_그리브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">어비스 그리브</span>
+              <span class="dex-stat">방어 40</span>
+              <span class="dex-stat">Lv.65</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/054_스톰_그리브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">스톰 그리브</span>
+              <span class="dex-stat">방어 43</span>
+              <span class="dex-stat">Lv.71</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/055_데스바인딩부츠.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">데스바인딩부츠</span>
+              <span class="dex-stat">방어 47</span>
+              <span class="dex-stat">Lv.77</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/방어구/056_슬레이프닐.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">슬레이프닐</span>
+              <span class="dex-stat">방어 50</span>
+              <span class="dex-stat">Lv.83</span>
+            </span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="dex-panel" data-dex-panel="accessory">
+        <p class="dex-note">레어도에 따라 근력·민첩·체력·지능 등 능력치, 최소/최대 데미지, 방어력, 펜스·경험치 획득량 증가, HP·SP·TP, 상태 이상 방지, 행운, 포션 회복량 증가 옵션이 추가로 붙습니다.</p>
+        <div class="dex-group">
+          <h4>반지 · 4종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/액세서리/001_근력의_반지.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 반지</span>
+              <span class="dex-stat">근력 +1</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/액세서리/002_민첩의_반지.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 반지</span>
+              <span class="dex-stat">민첩 +1</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/액세서리/003_체력의_반지.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 반지</span>
+              <span class="dex-stat">체력 +1</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/액세서리/004_지능의_반지.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">지능의 반지</span>
+              <span class="dex-stat">지능 +1</span>
+            </span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="dex-panel" data-dex-panel="set">
+        <div class="dex-group">
+          <h4>헌터 세트 · 4종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/001_헌터_헬름.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">헌터 헬름</span>
+              <span class="dex-stat">방어 14</span>
+              <span class="dex-stat">Lv.16</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/002_헌터_아머.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">헌터 아머</span>
+              <span class="dex-stat">방어 17</span>
+              <span class="dex-stat">Lv.16</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/003_헌터_건틀렛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">헌터 건틀렛</span>
+              <span class="dex-stat">방어 12</span>
+              <span class="dex-stat">Lv.16</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/004_헌터_그리브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">헌터 그리브</span>
+              <span class="dex-stat">방어 13</span>
+              <span class="dex-stat">Lv.16</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>템플 세트 · 4종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/001_템플_서클릿.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">템플 서클릿</span>
+              <span class="dex-stat">방어 24</span>
+              <span class="dex-stat">Lv.30</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/002_템플_아머.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">템플 아머</span>
+              <span class="dex-stat">방어 29</span>
+              <span class="dex-stat">Lv.30</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/003_템플_글러브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">템플 글러브</span>
+              <span class="dex-stat">방어 20</span>
+              <span class="dex-stat">Lv.30</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/004_템플_그리브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">템플 그리브</span>
+              <span class="dex-stat">방어 23</span>
+              <span class="dex-stat">Lv.30</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>루나 세트 · 4종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/001_루나_크라운.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">루나 크라운</span>
+              <span class="dex-stat">방어 32</span>
+              <span class="dex-stat">Lv.44</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/002_루나_플레이트.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">루나 플레이트</span>
+              <span class="dex-stat">방어 38</span>
+              <span class="dex-stat">Lv.44</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/003_루나_글러브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">루나 글러브</span>
+              <span class="dex-stat">방어 27</span>
+              <span class="dex-stat">Lv.44</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/004_루나_슈즈.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">루나 슈즈</span>
+              <span class="dex-stat">방어 30</span>
+              <span class="dex-stat">Lv.44</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>레인저 세트 · 4종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/001_레인저_헬름.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레인저 헬름</span>
+              <span class="dex-stat">방어 43</span>
+              <span class="dex-stat">Lv.58</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/002_레인저_아머.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레인저 아머</span>
+              <span class="dex-stat">방어 52</span>
+              <span class="dex-stat">Lv.58</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/003_레인저_건틀렛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레인저 건틀렛</span>
+              <span class="dex-stat">방어 36</span>
+              <span class="dex-stat">Lv.58</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/004_레인저_그리브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레인저 그리브</span>
+              <span class="dex-stat">방어 41</span>
+              <span class="dex-stat">Lv.58</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>페이트 세트 · 4종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/001_페이트_헬름.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">페이트 헬름</span>
+              <span class="dex-stat">방어 51</span>
+              <span class="dex-stat">Lv.72</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/002_페이트_아머.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">페이트 아머</span>
+              <span class="dex-stat">방어 62</span>
+              <span class="dex-stat">Lv.72</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/003_페이트_건틀렛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">페이트 건틀렛</span>
+              <span class="dex-stat">방어 42</span>
+              <span class="dex-stat">Lv.72</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/004_페이트_그리브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">페이트 그리브</span>
+              <span class="dex-stat">방어 48</span>
+              <span class="dex-stat">Lv.72</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>인피니티 세트 · 4종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/001_인피니티_크라운.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">인피니티 크라운</span>
+              <span class="dex-stat">방어 56</span>
+              <span class="dex-stat">Lv.86</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/002_인피니티_아머.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">인피니티 아머</span>
+              <span class="dex-stat">방어 68</span>
+              <span class="dex-stat">Lv.86</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/003_인피니티_건틀렛.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">인피니티 건틀렛</span>
+              <span class="dex-stat">방어 47</span>
+              <span class="dex-stat">Lv.86</span>
+            </span>
+          </div>
+          <div class="dex-tile">
+            <span class="dex-icon"><img src="images/item-icons/세트아이템/004_인피니티_그리브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">인피니티 그리브</span>
+              <span class="dex-stat">방어 52</span>
+              <span class="dex-stat">Lv.86</span>
+            </span>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="dex-panel" data-dex-panel="misc">
+        <div class="dex-group">
+          <h4>회복 포션 · 17종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile" title="HP를 100만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/001_소형_HP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">소형 HP 포션</span>
+              <span class="dex-stat">HP를 100만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="HP를 200만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/002_중형_HP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">중형 HP 포션</span>
+              <span class="dex-stat">HP를 200만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="HP를 400만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/003_대형_HP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">대형 HP 포션</span>
+              <span class="dex-stat">HP를 400만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="HP를 600만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/004_강력_Hp_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">강력 Hp 포션</span>
+              <span class="dex-stat">HP를 600만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="SP를 50만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/005_소형_SP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">소형 SP 포션</span>
+              <span class="dex-stat">SP를 50만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="SP를 100만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/006_중형_SP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">중형 SP 포션</span>
+              <span class="dex-stat">SP를 100만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="SP를 150만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/007_대형_SP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">대형 SP 포션</span>
+              <span class="dex-stat">SP를 150만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="SP를 200만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/008_강력_SP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">강력 SP 포션</span>
+              <span class="dex-stat">SP를 200만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="HP를 80 회복, SP를 40 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/009_소형_활력_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">소형 활력 포션</span>
+              <span class="dex-stat">HP를 80 회복, SP를 40 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="HP를 160 회복, SP를 80 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/010_중형_활력_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">중형 활력 포션</span>
+              <span class="dex-stat">HP를 160 회복, SP를 80 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="HP를 320 회복, SP를 120 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/011_대형_활력_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">대형 활력 포션</span>
+              <span class="dex-stat">HP를 320 회복, SP를 120 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="HP를 480 회복, SP를 160 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/012_강력_활력_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">강력 활력 포션</span>
+              <span class="dex-stat">HP를 480 회복, SP를 160 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="TP를 10만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/013_소형_TP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">소형 TP 포션</span>
+              <span class="dex-stat">TP를 10만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="TP를 20만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/014_중형_TP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">중형 TP 포션</span>
+              <span class="dex-stat">TP를 20만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="TP를 30만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/015_대형_TP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">대형 TP 포션</span>
+              <span class="dex-stat">TP를 30만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="TP를 40만큼 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/016_강력_TP_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">강력 TP 포션</span>
+              <span class="dex-stat">TP를 40만큼 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="HP, SP, TP를 모두 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/017_하이퍼_포션.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">하이퍼 포션</span>
+              <span class="dex-stat">HP, SP, TP를 모두 회복합니다.</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>영구 강화 · 8종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile" title="근력 +1의 효과를 영구적으로 부여합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/018_엘릭서_(근력).png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">엘릭서 (근력)</span>
+              <span class="dex-stat">근력 +1의 효과를 영구적으로 부여합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="체력 +1의 효과를 영구적으로 부여합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/019_엘릭서_(체력).png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">엘릭서 (체력)</span>
+              <span class="dex-stat">체력 +1의 효과를 영구적으로 부여합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="민첩 +1의 효과를 영구적으로 부여합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/020_엘릭서_(민첩).png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">엘릭서 (민첩)</span>
+              <span class="dex-stat">민첩 +1의 효과를 영구적으로 부여합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="집중 +1의 효과를 영구적으로 부여합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/021_엘릭서_(집중).png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">엘릭서 (집중)</span>
+              <span class="dex-stat">집중 +1의 효과를 영구적으로 부여합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="인벤토리에 소지하면 근력+3의 효과가 적용됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/104_레물루스의_가호_(근력).png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레물루스의 가호 (근력)</span>
+              <span class="dex-stat">인벤토리에 소지하면 근력+3의 효과가 적용됩니…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="인벤토리에 소지하면 체력+3의 효과가 적용됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/105_레물루스의_가호_(체력).png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레물루스의 가호 (체력)</span>
+              <span class="dex-stat">인벤토리에 소지하면 체력+3의 효과가 적용됩니…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="인벤토리에 소지하면 민첩+3의 효과가 적용됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/106_레물루스의_가호_(민첩).png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레물루스의 가호 (민첩)</span>
+              <span class="dex-stat">인벤토리에 소지하면 민첩+3의 효과가 적용됩니…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="인벤토리에 소지하면 집중+3의 효과가 적용됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/107_레물루스의_가호_(집중).png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레물루스의 가호 (집중)</span>
+              <span class="dex-stat">인벤토리에 소지하면 집중+3의 효과가 적용됩니…</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>보석 재료 · 21종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile" title="화염의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/022_루비.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">루비</span>
+              <span class="dex-stat">화염의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="화염의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/023_루비.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">루비</span>
+              <span class="dex-stat">화염의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="화염의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/024_루비.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">루비</span>
+              <span class="dex-stat">화염의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="화염의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/025_루비.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">루비</span>
+              <span class="dex-stat">화염의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="화염의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/026_루비.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">루비</span>
+              <span class="dex-stat">화염의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="냉기의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/027_사파이어.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">사파이어</span>
+              <span class="dex-stat">냉기의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="냉기의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/028_사파이어.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">사파이어</span>
+              <span class="dex-stat">냉기의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="냉기의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/029_사파이어.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">사파이어</span>
+              <span class="dex-stat">냉기의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="냉기의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/030_사파이어.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">사파이어</span>
+              <span class="dex-stat">냉기의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="냉기의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/031_사파이어.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">사파이어</span>
+              <span class="dex-stat">냉기의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="맹독의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/032_에메랄드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">에메랄드</span>
+              <span class="dex-stat">맹독의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="맹독의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/033_에메랄드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">에메랄드</span>
+              <span class="dex-stat">맹독의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="맹독의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/034_에메랄드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">에메랄드</span>
+              <span class="dex-stat">맹독의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="맹독의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/035_에메랄드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">에메랄드</span>
+              <span class="dex-stat">맹독의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="맹독의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/036_에메랄드.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">에메랄드</span>
+              <span class="dex-stat">맹독의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="마비의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/037_토파즈.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">토파즈</span>
+              <span class="dex-stat">마비의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="마비의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/038_토파즈.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">토파즈</span>
+              <span class="dex-stat">마비의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="마비의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/039_토파즈.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">토파즈</span>
+              <span class="dex-stat">마비의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="마비의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/040_토파즈.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">토파즈</span>
+              <span class="dex-stat">마비의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="마비의 오브를 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/041_토파즈.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">토파즈</span>
+              <span class="dex-stat">마비의 오브를 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="각종 보석과 조합하여 오브를 만드는 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/042_신비한_돌.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">신비한 돌</span>
+              <span class="dex-stat">각종 보석과 조합하여 오브를 만드는 조합 재료…</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>속성 오브 · 20종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile" title="무기와 결합하면 3%의 확률로 화염 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/043_화염의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">화염의 오브</span>
+              <span class="dex-stat">무기와 결합하면 3%의 확률로 화염 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 4%의 확률로 화염 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/044_화염의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">화염의 오브</span>
+              <span class="dex-stat">무기와 결합하면 4%의 확률로 화염 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 5%의 확률로 화염 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/045_화염의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">화염의 오브</span>
+              <span class="dex-stat">무기와 결합하면 5%의 확률로 화염 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 6%의 확률로 화염 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/046_화염의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">화염의 오브</span>
+              <span class="dex-stat">무기와 결합하면 6%의 확률로 화염 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 7%의 확률로 화염 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/047_화염의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">화염의 오브</span>
+              <span class="dex-stat">무기와 결합하면 7%의 확률로 화염 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 3%의 확률로 냉기 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/048_냉기의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">냉기의 오브</span>
+              <span class="dex-stat">무기와 결합하면 3%의 확률로 냉기 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 4%의 확률로 냉기 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/049_냉기의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">냉기의 오브</span>
+              <span class="dex-stat">무기와 결합하면 4%의 확률로 냉기 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 5%의 확률로 냉기 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/050_냉기의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">냉기의 오브</span>
+              <span class="dex-stat">무기와 결합하면 5%의 확률로 냉기 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 6%의 확률로 냉기 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/051_냉기의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">냉기의 오브</span>
+              <span class="dex-stat">무기와 결합하면 6%의 확률로 냉기 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 7%의 확률로 냉기 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/052_냉기의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">냉기의 오브</span>
+              <span class="dex-stat">무기와 결합하면 7%의 확률로 냉기 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 3%의 확률로 맹독 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/053_맹독의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">맹독의 오브</span>
+              <span class="dex-stat">무기와 결합하면 3%의 확률로 맹독 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 4%의 확률로 맹독 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/054_맹독의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">맹독의 오브</span>
+              <span class="dex-stat">무기와 결합하면 4%의 확률로 맹독 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 5%의 확률로 맹독 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/055_맹독의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">맹독의 오브</span>
+              <span class="dex-stat">무기와 결합하면 5%의 확률로 맹독 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 6%의 확률로 맹독 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/056_맹독의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">맹독의 오브</span>
+              <span class="dex-stat">무기와 결합하면 6%의 확률로 맹독 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 7%의 확률로 맹독 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/057_맹독의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">맹독의 오브</span>
+              <span class="dex-stat">무기와 결합하면 7%의 확률로 맹독 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 3%의 확률로 마비 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/058_마비의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">마비의 오브</span>
+              <span class="dex-stat">무기와 결합하면 3%의 확률로 마비 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 4%의 확률로 마비 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/059_마비의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">마비의 오브</span>
+              <span class="dex-stat">무기와 결합하면 4%의 확률로 마비 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 5%의 확률로 마비 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/060_마비의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">마비의 오브</span>
+              <span class="dex-stat">무기와 결합하면 5%의 확률로 마비 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 6%의 확률로 마비 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/061_마비의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">마비의 오브</span>
+              <span class="dex-stat">무기와 결합하면 6%의 확률로 마비 속성 공격…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기와 결합하면 7%의 확률로 마비 속성 공격이 발동됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/062_마비의_오브.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">마비의 오브</span>
+              <span class="dex-stat">무기와 결합하면 7%의 확률로 마비 속성 공격…</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>원석 재료 · 21종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile" title="근력의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/063_근력의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 원석</span>
+              <span class="dex-stat">근력의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="근력의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/064_근력의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 원석</span>
+              <span class="dex-stat">근력의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="근력의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/065_근력의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 원석</span>
+              <span class="dex-stat">근력의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="근력의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/066_근력의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 원석</span>
+              <span class="dex-stat">근력의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="근력의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/067_근력의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 원석</span>
+              <span class="dex-stat">근력의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="체력의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/068_체력의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 원석</span>
+              <span class="dex-stat">체력의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="체력의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/069_체력의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 원석</span>
+              <span class="dex-stat">체력의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="체력의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/070_체력의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 원석</span>
+              <span class="dex-stat">체력의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="체력의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/071_체력의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 원석</span>
+              <span class="dex-stat">체력의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="체력의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/072_체력의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 원석</span>
+              <span class="dex-stat">체력의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="민첩의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/073_민첩의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 원석</span>
+              <span class="dex-stat">민첩의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="민첩의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/074_민첩의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 원석</span>
+              <span class="dex-stat">민첩의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="민첩의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/075_민첩의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 원석</span>
+              <span class="dex-stat">민첩의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="민첩의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/076_민첩의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 원석</span>
+              <span class="dex-stat">민첩의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="민첩의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/077_민첩의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 원석</span>
+              <span class="dex-stat">민첩의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="집중의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/078_집중의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">집중의 원석</span>
+              <span class="dex-stat">집중의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="집중의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/079_집중의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">집중의 원석</span>
+              <span class="dex-stat">집중의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="집중의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/080_집중의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">집중의 원석</span>
+              <span class="dex-stat">집중의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="집중의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/081_집중의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">집중의 원석</span>
+              <span class="dex-stat">집중의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="집중의 결정을 만들기 위한 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/082_집중의_원석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">집중의 원석</span>
+              <span class="dex-stat">집중의 결정을 만들기 위한 조합 재료입니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="각종 원석과 조합하여 결정을 만드는 조합 재료입니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/083_촉매석.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">촉매석</span>
+              <span class="dex-stat">각종 원석과 조합하여 결정을 만드는 조합 재료…</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>능력치 결정 · 20종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 근력 + 1의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/084_근력의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 근력 + 1의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 근력 + 2의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/085_근력의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 근력 + 2의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 근력 + 3의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/086_근력의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 근력 + 3의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 근력 + 4의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/087_근력의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 근력 + 4의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 근력 + 5의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/088_근력의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">근력의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 근력 + 5의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 체력 + 1의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/089_체력의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 체력 + 1의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 체력 + 2의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/090_체력의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 체력 + 2의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 체력 + 3의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/091_체력의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 체력 + 3의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 체력 + 4의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/092_체력의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 체력 + 4의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 체력 + 5의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/093_체력의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">체력의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 체력 + 5의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 민첩 + 1의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/094_민첩의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 민첩 + 1의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 민첩 + 2의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/095_민첩의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 민첩 + 2의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 민첩 + 3의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/096_민첩의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 민첩 + 3의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 민첩 + 4의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/097_민첩의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 민첩 + 4의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 민첩 + 5의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/098_민첩의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">민첩의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 민첩 + 5의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 집중 + 1의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/099_집중의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">집중의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 집중 + 1의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 집중 + 2의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/100_집중의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">집중의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 집중 + 2의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 집중 + 3의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/101_집중의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">집중의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 집중 + 3의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 집중 + 4의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/102_집중의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">집중의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 집중 + 4의 능…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="장비와 결합하면 해당 장비에 집중 + 5의 능력이 추가됩니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/103_집중의_결정.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">집중의 결정</span>
+              <span class="dex-stat">장비와 결합하면 해당 장비에 집중 + 5의 능…</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>주문서 · 회복제 · 9종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile" title="미확인 아이템의 상세 정보를 확인할 수 있습니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/108_확인주문서.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">확인주문서</span>
+              <span class="dex-stat">미확인 아이템의 상세 정보를 확인할 수 있습니…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="근접한 마을로 귀환합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/109_귀환주문서.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">귀환주문서</span>
+              <span class="dex-stat">근접한 마을로 귀환합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="무기의 고유 능력치를 강화합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/110_무기강화주문서.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">무기강화주문서</span>
+              <span class="dex-stat">무기의 고유 능력치를 강화합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="방어구의 고유 능력치를 강화합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/111_방어구강화주문서.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">방어구강화주문서</span>
+              <span class="dex-stat">방어구의 고유 능력치를 강화합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="중독 상태를 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/112_해독제.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">해독제</span>
+              <span class="dex-stat">중독 상태를 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="혼란 상태를 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/113_진정제.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">진정제</span>
+              <span class="dex-stat">혼란 상태를 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="스킬 사용 불능 상태를 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/114_각성제.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">각성제</span>
+              <span class="dex-stat">스킬 사용 불능 상태를 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="포션 사용 불능 상태를 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/115_생명의_정수.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">생명의 정수</span>
+              <span class="dex-stat">포션 사용 불능 상태를 회복합니다.</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="기절을 제외한 모든 상태 이상을 회복합니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/116_치유의_씨앗.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">치유의 씨앗</span>
+              <span class="dex-stat">기절을 제외한 모든 상태 이상을 회복합니다.</span>
+            </span>
+          </div>
+          </div>
+        </div>
+        <div class="dex-group">
+          <h4>세트 파츠 주머니 · 6종</h4>
+          <div class="dex-grid">
+          <div class="dex-tile" title="주머니를 사용하시면 헌터 세트 장비 중 하나의 파츠를 얻을 수 있습니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/117_헌터_세트_파츠_주머니.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">헌터 세트 파츠 주머니</span>
+              <span class="dex-stat">주머니를 사용하시면 헌터 세트 장비 중 하나의…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="주머니를 사용하시면 템플 세트 장비 중 하나의 파츠를 얻을 수 있습니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/118_템플_세트_파츠_주머니.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">템플 세트 파츠 주머니</span>
+              <span class="dex-stat">주머니를 사용하시면 템플 세트 장비 중 하나의…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="주머니를 사용하시면 루나 세트 장비 중 하나의 파츠를 얻을 수 있습니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/119_루나_세트_파츠_주머니.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">루나 세트 파츠 주머니</span>
+              <span class="dex-stat">주머니를 사용하시면 루나 세트 장비 중 하나의…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="주머니를 사용하시면 레인저 세트 장비 중 하나의 파츠를 얻을 수 있습니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/120_레인저_세트_파츠_주머니.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">레인저 세트 파츠 주머니</span>
+              <span class="dex-stat">주머니를 사용하시면 레인저 세트 장비 중 하나…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="주머니를 사용하시면 페이트 세트 장비 중 하나의 파츠를 얻을 수 있습니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/121_페이트_세트_파츠_주머니.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">페이트 세트 파츠 주머니</span>
+              <span class="dex-stat">주머니를 사용하시면 페이트 세트 장비 중 하나…</span>
+            </span>
+          </div>
+          <div class="dex-tile" title="주머니를 사용하시면 인피니티 세트 장비 중 하나의 파츠를 얻을 수 있습니다.">
+            <span class="dex-icon"><img src="images/item-icons/잡화/122_인피니티_세트_파츠_주머니.png" alt="" loading="lazy"></span>
+            <span class="dex-info">
+              <span class="dex-name">인피니티 세트 파츠 주머니</span>
+              <span class="dex-stat">주머니를 사용하시면 인피니티 세트 장비 중 하…</span>
+            </span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="monster-dex" id="monster-dex">
+  <div class="container reveal">
+    <p class="eyebrow">MONSTERS</p>
+    <h2>192 종류의 몬스터</h2>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <div class="container reveal">
+    <p class="eyebrow">DOWNLOAD</p>
+    <h2>쌍둥이의 갈라진 운명, 지금 시작하세요</h2>
+    <p class="lede">다운로드 $9.99 · 이후 부분유료 아이템으로 편리하게 즐길 수 있습니다.</p>
+    <div class="platform-row">
+      <span class="platform-badge soon">Apple App Store · 예정</span>
+      <span class="platform-badge soon">Google Play · 예정</span>
+      <span class="platform-badge">PC(Stream) · 예정</span>
+    </div>
+    <a class="btn btn-primary" href="#top">구매하기 · $9.99$</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <svg width="28" height="28" viewBox="0 0 30 30" aria-hidden="true">
+            <path d="M15 2 L27 7 V15 C27 21 22 26 15 28 C8 26 3 21 3 15 V7 Z" fill="none" stroke="var(--ink)" stroke-width="1.2"/>
+            <path d="M15 2 L3 7 V15 C3 21 8 26 15 28 Z" fill="var(--gold)" opacity=".7"/>
+            <path d="M15 2 L27 7 V15 C27 21 22 26 15 28 Z" fill="var(--crimson)" opacity=".7"/>
+          </svg>
+          <span class="brand-text">킹덤즈<em>운명의 굴레</em></span>
+        </div>
+        <p>RE CH Games가 개발한 모바일 액션 RPG. 쌍둥이 왕자의 엇갈린 운명을 그린 이야기가 지금 시작됩니다.</p>
+      </div>
+      <div class="footer-col">
+        <h4>게임</h4>
+        <ul>
+          <li><a href="#about">게임소개</a></li>
+          <li><a href="#characters">캐릭터</a></li>
+          <li><a href="#classes">클래스</a></li>
+          <li><a href="#systems">시스템</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>상점</h4>
+        <ul>
+          <li><a href="#items">아이템 도감</a></li>
+          <li><a href="#download">다운로드</a></li>
+          <li><a href="#items">부분유료 안내</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>고객센터</h4>
+        <ul>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">자주 묻는 질문</a></li>
+          <li><a href="#">문의하기</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© RE CH Games Co., Ltd. All Rights Reserved.</p>
+      <p> SEED3 : Confines of Fate </p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
