@@ -43,17 +43,16 @@ if(reduceMotion || !('IntersectionObserver' in window)){
   revealEls.forEach(function(el){ io.observe(el); });
 }
 
-// ember particles in hero
+// ember particles across the whole page
 (function(){
   var canvas = document.getElementById('embers');
   var ctx = canvas.getContext('2d');
-  var hero = canvas.closest('.hero');
   var particles = [];
   var COUNT = reduceMotion ? 0 : 46;
 
   function resize(){
-    canvas.width = hero.clientWidth;
-    canvas.height = hero.clientHeight;
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
   }
   function makeParticle(randomY){
     var goldSide = Math.random() < 0.5;
