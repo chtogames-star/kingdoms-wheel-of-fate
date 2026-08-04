@@ -296,6 +296,7 @@ section{ scroll-margin-top:84px; }
   align-items:center; margin-top:var(--sp-5); padding-top:var(--sp-3);
   border-top:1px solid var(--line);
 }
+.section-head + .growth-block{ margin-top:0; padding-top:0; border-top:none; }
 .growth-media{ padding:0; overflow:hidden; }
 .growth-media img{ width:100%; display:block; }
 .growth-info h3{ font-size:1.1rem; color:var(--gold-soft); margin-bottom:.7rem; }
