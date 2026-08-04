@@ -281,7 +281,7 @@ section{ scroll-margin-top:84px; }
 @media (max-width:520px){ .class-grid{ grid-template-columns:1fr; } }
 
 /* ---------- systems ---------- */
-.systems{ padding-block:var(--sp-4); }
+.systems{ padding-top:var(--sp-4); padding-bottom:var(--sp-2); }
 .system-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:var(--sp-3); }
 .system-card{ padding:var(--sp-3); border-top:2px solid var(--gold-soft); background:var(--surface); }
 .system-card:nth-child(3n+2){ border-top-color:var(--crimson-soft); }
@@ -340,7 +340,7 @@ section{ scroll-margin-top:84px; }
 }
 
 /* ---------- items ---------- */
-.items{ padding-block:var(--sp-4); background:rgba(255,255,255,.015); }
+.items{ padding-top:var(--sp-4); padding-bottom:var(--sp-2); background:rgba(255,255,255,.015); }
 .stat-grid{ display:grid; grid-template-columns:repeat(6,1fr); gap:var(--sp-2); margin-bottom:var(--sp-5); }
 .stat-tile{ padding:1.2rem 1rem; text-align:center; }
 .stat-tile .num{ font-family:var(--font-display); font-size:1.9rem; font-variant-numeric:tabular-nums; color:var(--gold-soft); }
@@ -442,7 +442,7 @@ section{ scroll-margin-top:84px; }
 /* ---------- monster dex banner ---------- */
 .monster-dex{
   position:relative; min-height:620px;
-  padding-block:var(--sp-6);
+  padding-top:var(--sp-3); padding-bottom:var(--sp-6);
   text-align:center;
   background-color:var(--bg);
   background-image:
@@ -469,7 +469,7 @@ section{ scroll-margin-top:84px; }
 .platform-badge.soon{ border-style:dashed; }
 
 /* ---------- footer ---------- */
-footer{ border-top:1px solid var(--line); padding-block:var(--sp-5); }
+footer{ border-top:1px solid var(--line); padding-block:var(--sp-3); }
 .footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:var(--sp-4); margin-bottom:var(--sp-4); }
 .footer-brand p{ color:var(--muted); font-size:.85rem; margin-top:.8rem; max-width:280px; }
 .footer-col h4{ font-size:.78rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-soft); margin-bottom:1rem; }
