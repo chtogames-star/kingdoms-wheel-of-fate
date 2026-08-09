@@ -93,6 +93,30 @@ section{ scroll-margin-top:84px; }
 }
 .nav-toggle span{ height:1px; background:var(--ink); width:18px; margin-inline:auto; }
 
+.lang-switch{ position:relative; }
+.lang-switch-btn{
+  display:flex; align-items:center; gap:.4rem; padding:.45rem .7rem;
+  background:none; border:1px solid var(--line); border-radius:3px;
+  color:var(--muted); font-size:.78rem; letter-spacing:.04em; cursor:pointer;
+  transition:color .15s ease, border-color .15s ease;
+}
+.lang-switch-btn:hover{ color:var(--ink); border-color:var(--gold-soft); }
+.lang-menu{
+  list-style:none; margin:0; padding:.4rem; position:absolute; top:calc(100% + .5rem); right:0;
+  min-width:120px; background:var(--surface); border:1px solid var(--line); border-radius:4px;
+  box-shadow:0 12px 28px rgba(0,0,0,.35);
+  opacity:0; visibility:hidden; transform:translateY(-4px);
+  transition:opacity .15s ease, transform .15s ease, visibility .15s;
+}
+.lang-menu.open{ opacity:1; visibility:visible; transform:translateY(0); }
+.lang-option{
+  display:block; width:100%; text-align:left; padding:.55rem .7rem;
+  background:none; border:none; border-radius:3px; color:var(--muted);
+  font-size:.85rem; cursor:pointer; transition:background .15s ease, color .15s ease;
+}
+.lang-option:hover{ background:var(--surface-2); color:var(--ink); }
+.lang-option[aria-selected="true"]{ color:var(--gold-soft); }
+
 @media (max-width:860px){
   .primary-nav{
     position:fixed; inset:72px 0 auto 0; flex-direction:column; gap:0;
@@ -422,6 +446,10 @@ section{ scroll-margin-top:84px; }
   white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
 }
 .dex-stat{ display:block; font-size:.66rem; color:var(--muted); margin-top:.15rem; font-variant-numeric:tabular-nums; }
+.dex-name.rarity-purple{ color:#a76bd4; }
+.dex-name.rarity-blue{ color:#5b8fd6; }
+.dex-name.rarity-red{ color:#c1544f; }
+.dex-name.rarity-gold{ color:var(--gold-soft); }
 @media (max-width:520px){ .dex-grid{ grid-template-columns:repeat(auto-fill,minmax(130px,1fr)); } }
 
 .price-wrap{ display:grid; grid-template-columns:1.1fr .9fr; gap:var(--sp-4); align-items:start; }
